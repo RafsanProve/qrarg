@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <nav className="bg-zinc-800 text-white">
       <div className="flex justify-between items-center px-4">
-        <div className="flex items-center py-5">
+        <div className="flex items-center py-2">
           <Image src="/images/logo.png" alt="logo" width={50} height={50} />
         </div>
 
