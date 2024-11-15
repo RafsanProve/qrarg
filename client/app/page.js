@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Hero from "./components/home/Hero";
 import Overview from "./components/home/Overview";
+import Researches from "./components/home/Researches";
 import Footer from "./components/Footer";
 import {Roboto_Condensed} from "next/font/google";
 
@@ -17,6 +18,7 @@ export default function Home() {
     <Navbar />
     <Hero />
     <Overview />
+    <Researches />
     {/* <Footer /> */}
     </main>
   );
