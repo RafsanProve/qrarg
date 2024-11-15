@@ -7,10 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        TEXT: "zinc-200",
       },
+      backgroundImage: {
+        "heroImg": "url('/images/hero.png')",
+      }
     },
   },
   plugins: [],
