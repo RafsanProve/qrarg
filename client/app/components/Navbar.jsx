@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="bg-zinc-800 text-white">
+    <nav className="bg-zinc-800 text-TEXT">
       <div className="flex justify-between items-center px-4">
         <div className="flex items-center py-2">
           <Image src="/images/logo.png" alt="logo" width={50} height={50} />
