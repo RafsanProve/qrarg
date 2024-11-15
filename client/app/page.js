@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Hero from "./components/home/Hero";
+import Overview from "./components/home/Overview";
+import Footer from "./components/Footer";
 import {Roboto_Condensed} from "next/font/google";
 
 const roboto = Roboto_Condensed({
@@ -14,6 +16,8 @@ export default function Home() {
     <main className={roboto.className}>
     <Navbar />
     <Hero />
+    <Overview />
+    {/* <Footer /> */}
     </main>
   );
 }
