@@ -2,7 +2,7 @@ import hero from "/public/images/hero.png"
 
 export default function Hero() {
   return (
-    <section style={{ backgroundImage: `url(${hero.src})` }} className="bg-repeat bg-cover text-TEXT h-auto min-h-[400px] md:min-h-[500px] lg:min-h-[600px] flex flex-col items-center justify-center px-4 md:px-6 lg:px-8">
+    <section style={{ backgroundImage: `url(${hero.src})` }} className="bg-repeat bg-cover text-TEXT w-auto h-auto min-h-[400px] md:min-h-[500px] lg:min-h-[600px] flex flex-col items-center justify-center px-4 md:px-6 lg:px-8">
       <div className="flex flex-col items-center justify-center h-full max-w-5xl text-center pb-6 md:pb-8 lg:pb-10 mt-16 md:mt-18 lg:mt-20">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4">
           Welcome To <br />

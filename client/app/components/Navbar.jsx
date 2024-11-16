@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="bg-zinc-800 text-TEXT">
+    <nav className="bg-zinc-800 text-TEXT w-full fixed">
       <div className="flex justify-between items-center px-4">
         <div className="flex items-center py-2">
           <Image src="/images/logo.png" alt="logo" width={50} height={50} />
@@ -15,7 +15,7 @@ export default function Navbar() {
 
         {/* Hamburger Menu Button */}
         <button 
-          className="md:hidden p-2"
+          className="lg:hidden p-2"
           onClick={() => setIsOpen(!isOpen)}
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -29,7 +29,7 @@ export default function Navbar() {
         </button>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex gap-4">
+        <div className="hidden lg:flex gap-4">
           <Link href="/">Home</Link>
           <Link href="/Expertise">Expertise</Link>
           <Link href="/Mission-Vision">Mission & Vision</Link>
@@ -46,7 +46,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden flex flex-col items-center pb-4">
+        <div className="lg:hidden flex flex-col items-center pb-4">
           <Link href="/" className="py-2">Home</Link>
           <Link href="/Expertise" className="py-2">Expertise</Link>
           <Link href="/Mission-Vision" className="py-2">Mission & Vision</Link>
