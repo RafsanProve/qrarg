@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export default function HomeCard({ title, description, imageUrl }) {
   return (
@@ -7,6 +8,12 @@ export default function HomeCard({ title, description, imageUrl }) {
       <h1 className="text-lg line-clamp-3 text-left w-full font-bold sm:text-lg md:text-2xl mb-4 mt-4 px-4 sm:px-8 md:px-18">{title}</h1>
       {/* <h1 className="text-lg line-clamp-3 self-start font-bold sm:text-lg md:text-2xl mb-4 mt-4 px-4 sm:px-8 md:px-18 ">{title}</h1> */}
       <p className="text-base text-neutral-500 sm:text-base md:text-lg px-4 sm:px-8 md:px-18 mb-4 leading-relaxed text-left">{description}</p>
+      
+      <Link href="/" className="bg-zinc-800 text-white w-32 h-10 transition duration-700 ease-in-out hover:scale-105 hover:drop-shadow-xl flex items-center justify-center rounded-[4px] mt-auto mx-8 self-start">
+        Read More
+        <Image src="/svgs/arrow.svg" alt="arrow" className="w-4 h-4 ml-2" width={20} height={20} />
+      </Link>
+
     </div>
   )
 }
