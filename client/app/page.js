@@ -20,7 +20,7 @@ export default function Home() {
     <Overview />
     <Researches />
     <Products />
-    {/* <Footer /> */}
+    <Footer />
     </main>
   );
 }
