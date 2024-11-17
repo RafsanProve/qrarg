@@ -1,5 +1,6 @@
 import Image from "next/image";
 import HomeCard from "./HomeCard";
+import Link from "next/link";
 
 export default function Researches() {
     return (
@@ -20,12 +21,12 @@ export default function Researches() {
             <HomeCard title={"Research 1"} description={"Description 1"} imageUrl={"/images/product1.png"} />
             <HomeCard title={"IoT-based AI-integrated device for farmers: A recommendation System for crop cultivation"} description={"Description 1"} imageUrl={"/images/research1.png"}/>
         </div>
-        <button className="border-solid border-2 border-zinc-800 transition duration-700 ease-in-out hover:backdrop-blur-md text-TEXT font-bold py-3 mt-16 md:py-4 px-6 md:px-8 text-lg md:text-xl w-40 md:w-44 lg:w-48 h-14 md:h-16 flex items-center justify-center gap-2">
+        <Link href="#" className="border-solid border-2 border-zinc-800 transition duration-700 ease-in-out hover:scale-105 text-TEXT font-bold py-3 mt-16 md:py-4 px-6 md:px-8 text-lg md:text-xl w-40 md:w-44 lg:w-48 h-14 md:h-16 flex items-center justify-center gap-2">
             See More 
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
             </svg>
-        </button>
+        </Link>
     </section>
     )
 }

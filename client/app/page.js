@@ -16,6 +16,7 @@ export default function Home() {
   return (
     <main className={roboto.className}>
     <Navbar />
+    <div className="bg-zinc-800 w-full h-16"></div>
     <Hero />
     <Overview />
     <Researches />
