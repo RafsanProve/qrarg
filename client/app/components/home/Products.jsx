@@ -21,19 +21,19 @@ export default function Products() {
                 title={"Artificial Kinetic Intelligence (AKI), the Automated Data Analysis and Machine Learning Tool for Educational Research."} 
                 description={"---"} 
                 imageUrl={"/images/AKI.png"}
-                link={"https://www.youtube.com/watch?v=nAJGlOPJQIs"}
+                link={""}
             />
             <HomeCard 
                 title={"Intelligent Head-bot, towards the Development of an AI Based Cognitive Platform"} 
                 description={"---"} 
                 imageUrl={"/images/Head-bot.png"}  
-                link={"https://www.linkedin.com/posts/quantum-robotics-automation-research-group_congratulations-to-my-beloved-students-who-activity-7264334965557854211-Wnme?utm_source=share&utm_medium=member_desktop"}
+                link={""}
             />
             <HomeCard 
                 title={"Rock-Paper-Scissor, an intelligent zero-sum gaming system for Education and Entertainment."} 
                 description={"Description 1"} 
                 imageUrl={"/images/rock.png"} 
-                link={"/"}
+                link={""}
             />
         </div>
         <Link href="#" className="border-solid border-2 border-zinc-800 transition duration-700 ease-in-out hover:scale-105 text-TEXT font-bold py-3 mt-16 md:py-4 px-6 md:px-8 text-lg md:text-xl w-40 md:w-44 lg:w-48 h-14 md:h-16 flex items-center justify-center gap-2">

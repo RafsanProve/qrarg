@@ -10,10 +10,12 @@ export default function HomeCard({ title, description, imageUrl, link }) {
       <p className="text-base line-clamp-4 text-neutral-500 sm:text-base md:text-lg px-4 sm:px-8 md:px-18 mb-4 leading-relaxed text-left">{description}</p>
       {/* <p className="text-base text-neutral-500 sm:text-base md:text-lg px-4 sm:px-8 md:px-18 mb-4 leading-relaxed text-left">{description}</p> */}
       
-      <Link href={link} target="_blank" className="bg-zinc-800 text-white w-32 h-10 transition duration-700 ease-in-out hover:scale-105 hover:drop-shadow-xl flex items-center justify-center rounded-[4px] mt-auto mx-8 self-start">
-        Read More
-        <Image src="/svgs/arrow.svg" alt="arrow" className="w-4 h-4 ml-2" width={20} height={20} />
-      </Link>
+      {link && (
+        <Link href={link} target="_blank" className="bg-zinc-800 text-white w-32 h-10 transition duration-700 ease-in-out hover:scale-105 hover:drop-shadow-xl flex items-center justify-center rounded-[4px] mt-auto mx-8 self-start">
+          Read More
+          <Image src="/svgs/arrow.svg" alt="arrow" className="w-4 h-4 ml-2" width={20} height={20} />
+        </Link>
+      )}
 
     </div>
   )
