@@ -19,19 +19,19 @@ export default function Products() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
             <HomeCard 
                 title={"Artificial Kinetic Intelligence (AKI), the Automated Data Analysis and Machine Learning Tool for Educational Research."} 
-                description={"---"} 
+                description={"A Dynamic Machine Learning and Data Analysis Web Application streamlines key data science tasks, including data preprocessing, model training, validation, and deployment. Built with Streamlit, its intuitive interface makes machine learning accessible to users with minimal technical expertise. The app simplifies processes such as feature engineering, missing data handling, outlier detection, and scaling. It supports multiple regression and classification models, offering comprehensive performance evaluation. Additionally, it enables dynamic hyperparameter tuning for optimized model performance."} 
                 imageUrl={"/images/AKI.png"}
                 link={""}
             />
             <HomeCard 
                 title={"Intelligent Head-bot, towards the Development of an AI Based Cognitive Platform"} 
-                description={"---"} 
+                description={"A cognitive humanoid head is an AI-enabled head-bot platform designed to emulate human cognitive abilities, including perception, thinking, learning, and decision-making. It uses natural language processing to interact with humans and recognizes individuals, facilitating seamless communication. The head-bot can imitate a range of expressions, engage visitors in general conversation, and identify individuals. Its skeleton is constructed from hexagonal PVC sheet blocks, forming a human-like head structure equipped with an LCD, camera, microphones, and speaker for enhanced functionality."} 
                 imageUrl={"/images/Head-bot.png"}  
                 link={""}
             />
             <HomeCard 
                 title={"Rock-Paper-Scissor, an intelligent zero-sum gaming system for Education and Entertainment."} 
-                description={"Description 1"} 
+                description={"A custom robotic hand, powered by five servo motors, replicates gestures detected by a computer. The system integrates a TensorFlow Lite (TFLite) model with a Mediapipe-based hand recognition framework and a Random Forest classifier. Designed for real-time use on a Raspberry Pi, the TFLite model analyzes webcam input to detect a thumbs-up gesture, initiating a countdown. Once completed, the user’s gesture is captured and classified, leveraging 3D hand landmarks extracted by Mediapipe and categorized using the Random Forest classifier."} 
                 imageUrl={"/images/rock.png"} 
                 link={""}
             />
