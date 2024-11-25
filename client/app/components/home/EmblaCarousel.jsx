@@ -25,7 +25,7 @@ const description = [
 ]
 
 export default function EmblaCarousel() {
-    const [emblaRef, emblaApi] = useEmblaCarousel({loop: true}, [Autoplay({ delay: 3000 })])
+    const [emblaRef, emblaApi] = useEmblaCarousel({loop: true}, [Autoplay({ delay: 5000 })])
 
     const scrollPrev = useCallback(() => {
         if (emblaApi) emblaApi.scrollPrev()
