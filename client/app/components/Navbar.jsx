@@ -3,11 +3,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
 
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="bg-zinc-800 text-TEXT w-full fixed">
+    <nav className="bg-zinc-800 text-TEXT w-full fixed z-20">
       <div className="flex justify-between items-center px-4">
         <div className="flex items-center py-2">
           <Image src="/images/logo.png" alt="logo" width={50} height={50} />
