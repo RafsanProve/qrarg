@@ -38,7 +38,7 @@ export default function EmblaCarousel() {
 
     return (
     <div className=''>
-        <PrevButton className= "absolute flex items-center justify-center text-black transition duration-700 ease-in-out  hover:text-white hover:drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] hover:scale-105 top-[200px] md:top-[250px] lg:top-[300px] left-0 w-16 h-16 mx-1 z-10" onClick={scrollPrev} />
+        <PrevButton className= "absolute flex items-center justify-center text-black transition duration-700 ease-in-out  hover:text-white hover:drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] hover:scale-105 top-[200px] md:top-[250px] lg:top-[300px] left-0 w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 mx-1 z-10" onClick={scrollPrev} />
         <div className="embla__viewport mx-auto mt-auto h-[400px] md:h-[500px] lg:h-[600px] w-full border border-gray-500 text-black " ref={emblaRef}>
         
             <div className="embla__container h-full">
@@ -69,7 +69,7 @@ export default function EmblaCarousel() {
             </div>
         
         </div>
-        <NextButton className= "absolute flex items-center justify-center text-black transition duration-700 ease-in-out  hover:text-white hover:drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] hover:scale-105 top-[200px] md:top-[250px] lg:top-[300px] right-0 w-16 h-16 mx-1 z-10" onClick={scrollNext}/>
+        <NextButton className= "absolute flex items-center justify-center text-black transition duration-700 ease-in-out  hover:text-white hover:drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] hover:scale-105 top-[200px] md:top-[250px] lg:top-[300px] right-0 w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 mx-1 z-10" onClick={scrollNext}/>
     </div>
     )
 }
