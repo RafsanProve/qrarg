@@ -17,11 +17,11 @@ function SocialMediaButton({ buttonURL, iconUrl, altText }) {
 
 export default function Footer() {
     return (
-        <footer className="bg-zinc-800 text-TEXT p-4 md:p-6 lg:p-8 shadow-lg flex flex-col items-center justify-end h-full w-full mx-auto text-center pb-10 mt-20">
+        <footer className="bg-zinc-800 text-TEXT p-4 md:p-6 lg:p-8 shadow-lg flex flex-col items-center justify-end h-full w-full mx-auto text-center mt-20">
             <h1 className='text-3xl md:text-4xl lg:text-5xl pt-8 mb-4'><b>Stay in Touch</b></h1>
             <p className='text-base md:text-lg lg:text-xl mb-4 px-4 md:px-0'>Send us your thought. Your each words are highly valuable to us.</p>
             
-            <div className="flex flex-col md:flex-row items-center justify-center mb-4 w-full md:w-3/4 lg:w-2/5 px-4 md:px-0">
+            <div className="flex flex-col md:flex-row items-center justify-center mb-8 w-full md:w-3/4 lg:w-2/5 px-4 md:px-0">
                 <input 
                     className="w-full h-12 px-4 border-2 border-black rounded-sm mb-4 md:mb-0 text-zinc-800 text-base lg:text-xl" 
                     placeholder="Email" 
