@@ -3,6 +3,8 @@ import Footer from "../components/Footer";
 import ResearchCard from "../components/research/ResearchCard";
 import {Roboto_Condensed} from "next/font/google";
 import FilterBox from "../components/research/FilterBox";
+import SearchBar from "../components/research/SearchBar";
+import InfoSection from "../components/research/InfoSection";
 
 const roboto = Roboto_Condensed({
       weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -15,14 +17,16 @@ export default function ResearchesPage() {
       <main className={roboto.className}>
         <Navbar />
         <div className="bg-zinc-800 w-full h-16"></div>
-        <div className="flex">
+        <InfoSection />
+        <div className="flex mx-8">
           {/* Fixed FilterBox */}
-          <div className="sticky top-16 w-[300px] h-screen overflow-y-auto">
+          <div className="sticky top-20 w-1/5 h-screen overflow-y-auto">
             <FilterBox />
           </div>
         
           {/* Research Cards Grid */}
           <div className="ml-6 flex-1">
+          <SearchBar />
             <div className="grid grid-cols-3">
               <ResearchCard 
                 title={"Quasi-inverse pendulum model of 12 DoF bipedal walking"} 
