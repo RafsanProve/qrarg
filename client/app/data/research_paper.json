@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Quasi-inverse pendulum model of 12 DoF bipedal walking",
+        "authors": ["M. Akhtaruzzaman", "Amir A. Shafie", "Md. Raisuddin Khan"],
+        "tags": ["keyword1", "keyword2"],
+        "description": "This paper presents modeling of a 12-degree of freedom (DoF) bipedal robot, focusing on the lower limbs of the system, and trajectory design for walking on straight path. Gait trajectories are designed by modeling of center of mass (CoM) trajectory and swing foot ankle trajectory based on stance foot ankle.",
+        "imageUrl": "/images/Quasi-inverse.png",
+        "link": "https://link.springer.com/article/10.1007/s11633-016-1023-1"
+    },
+    
+    {
+        "title": "Analyzing Critical Success Factors for Sustainable Cloud-Based Mobile Learning (CBML) in Crisp and Fuzzy Environment",
+        "authors": ["Quadri Noorulhasan Naveed", "Adel Ibrahim Qahmash", "Md Akhtaruzzaman"],
+        "tags": ["keyword1", "keyword2"],
+        "description": "The current study focuses on the assessment and ranking of various main factors and subfactors of CBML. Analytic hierarchy process-group decision-making (AHP-GDM)- and fuzzy analytic hierarchy process (FAHP)-based methodologies were used to evaluate and model the main factors and subfactors of CBML in crisp and fuzzy environments.",
+        "imageUrl": "/images/Quasi-inverse.png",
+        "link": "https://www.mdpi.com/2071-1050/15/2/1017"
+    },
+
+    {
+        "title": "Quasi-inverse pendulum model of 12 DoF bipedal walking",
+        "authors": ["M. Akhtaruzzaman", "Amir A. Shafie", "Md. Raisuddin Khan"],
+        "tags": ["keyword1", "keyword2"],
+        "description": "This is the abstract of Research Paper 1.",
+        "imageUrl": "/images/Quasi-inverse.png",
+        "link": "https://link.springer.com/article/10.1007/s11633-016-1023-1"
+    },
+
+    {
+        "title": "Quasi-inverse pendulum model of 12 DoF bipedal walking",
+        "authors": ["M. Akhtaruzzaman", "Amir A. Shafie", "Md. Raisuddin Khan"],
+        "tags": ["keyword1", "keyword2"],
+        "description": "This is the abstract of Research Paper 1.",
+        "imageUrl": "/images/Quasi-inverse.png",
+        "link": "https://link.springer.com/article/10.1007/s11633-016-1023-1"
+    }
+]
