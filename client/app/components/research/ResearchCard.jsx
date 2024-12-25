@@ -5,12 +5,12 @@ import Tag from "./Tag"
 export default function HomeCard({ title, authors, tags, description, imageUrl, link }) {
   return (
     <div className="bg-white text-zinc-800 rounded-xl border-2 border-zinc-800 flex flex-col items-left justify-start h-[600px] w-11/12 mx-auto pb-10 mt-12 sm:mx-8 md:mx-auto">
-      <Image src={imageUrl} alt={title} className="w-full h-64 rounded-t-3xl shadow-lg bg-cover" width={320} height={256} />
+      <Image src={imageUrl} alt={title} className="w-full h-64 rounded-t-xl shadow-lg bg-cover" width={320} height={256} />
       <h1 className="line-clamp-2 text-left w-full font-bold text-base sm:text-base md:text-xl mb-4 mt-4 px-4 sm:px-8 md:px-18">{title}</h1>
       
       {/* Authors section */}
       <div className="flex flex-row items-center justify-start px-4 sm:px-8 md:px-18 mb-2">
-        <p className="text-sm text-gray-600 italic line-clamp-1">
+        <p className="text-sm text-gray-600 font-bold italic line-clamp-1">
           {authors ? authors.join(', ') : 'Anonymous'}
         </p>
       </div>

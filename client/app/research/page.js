@@ -5,6 +5,7 @@ import {Roboto_Condensed} from "next/font/google";
 import FilterBox from "../components/research/FilterBox";
 import SearchBar from "../components/research/SearchBar";
 import InfoSection from "../components/research/InfoSection";
+import data from "../data/research_paper.json";
 
 const roboto = Roboto_Condensed({
       weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -28,68 +29,16 @@ export default function ResearchesPage() {
           <div className="ml-6 flex-1">
           <SearchBar />
             <div className="grid grid-cols-3">
-              <ResearchCard 
-                title={"Quasi-inverse pendulum model of 12 DoF bipedal walking"} 
-                description={"This paper presents modeling of a 12-degree of freedom (DoF) bipedal robot, focusing on the lower limbs of the system, and trajectory design for walking on straight path. Gait trajectories are designed by modeling of center of mass (CoM) trajectory and swing foot ankle trajectory based on stance foot ankle."} 
-                imageUrl={"/images/Quasi-inverse.png"}
-                link={"https://link.springer.com/article/10.1007/s11633-016-1023-1"}
-              /><ResearchCard 
-                title={"Quasi-inverse pendulum model of 12 DoF bipedal walking"} 
-                description={"This paper presents modeling of a 12-degree of freedom (DoF) bipedal robot, focusing on the lower limbs of the system, and trajectory design for walking on straight path. Gait trajectories are designed by modeling of center of mass (CoM) trajectory and swing foot ankle trajectory based on stance foot ankle."} 
-                imageUrl={"/images/Quasi-inverse.png"}
-                link={"https://link.springer.com/article/10.1007/s11633-016-1023-1"}
-              /><ResearchCard 
-                title={"Quasi-inverse pendulum model of 12 DoF bipedal walking"} 
-                description={"This paper presents modeling of a 12-degree of freedom (DoF) bipedal robot, focusing on the lower limbs of the system, and trajectory design for walking on straight path. Gait trajectories are designed by modeling of center of mass (CoM) trajectory and swing foot ankle trajectory based on stance foot ankle."} 
-                imageUrl={"/images/Quasi-inverse.png"}
-                link={"https://link.springer.com/article/10.1007/s11633-016-1023-1"}
-              /><ResearchCard 
-                title={"Quasi-inverse pendulum model of 12 DoF bipedal walking"} 
-                description={"This paper presents modeling of a 12-degree of freedom (DoF) bipedal robot, focusing on the lower limbs of the system, and trajectory design for walking on straight path. Gait trajectories are designed by modeling of center of mass (CoM) trajectory and swing foot ankle trajectory based on stance foot ankle."} 
-                imageUrl={"/images/Quasi-inverse.png"}
-                link={"https://link.springer.com/article/10.1007/s11633-016-1023-1"}
-              /><ResearchCard 
-                title={"Quasi-inverse pendulum model of 12 DoF bipedal walking"} 
-                description={"This paper presents modeling of a 12-degree of freedom (DoF) bipedal robot, focusing on the lower limbs of the system, and trajectory design for walking on straight path. Gait trajectories are designed by modeling of center of mass (CoM) trajectory and swing foot ankle trajectory based on stance foot ankle."} 
-                imageUrl={"/images/Quasi-inverse.png"}
-                link={"https://link.springer.com/article/10.1007/s11633-016-1023-1"}
-              /><ResearchCard 
-                title={"Quasi-inverse pendulum model of 12 DoF bipedal walking"} 
-                description={"This paper presents modeling of a 12-degree of freedom (DoF) bipedal robot, focusing on the lower limbs of the system, and trajectory design for walking on straight path. Gait trajectories are designed by modeling of center of mass (CoM) trajectory and swing foot ankle trajectory based on stance foot ankle."} 
-                imageUrl={"/images/Quasi-inverse.png"}
-                link={"https://link.springer.com/article/10.1007/s11633-016-1023-1"}
-              /><ResearchCard 
-                title={"Quasi-inverse pendulum model of 12 DoF bipedal walking"} 
-                description={"This paper presents modeling of a 12-degree of freedom (DoF) bipedal robot, focusing on the lower limbs of the system, and trajectory design for walking on straight path. Gait trajectories are designed by modeling of center of mass (CoM) trajectory and swing foot ankle trajectory based on stance foot ankle."} 
-                imageUrl={"/images/Quasi-inverse.png"}
-                link={"https://link.springer.com/article/10.1007/s11633-016-1023-1"}
-              /><ResearchCard 
-                title={"Quasi-inverse pendulum model of 12 DoF bipedal walking"} 
-                description={"This paper presents modeling of a 12-degree of freedom (DoF) bipedal robot, focusing on the lower limbs of the system, and trajectory design for walking on straight path. Gait trajectories are designed by modeling of center of mass (CoM) trajectory and swing foot ankle trajectory based on stance foot ankle."} 
-                imageUrl={"/images/Quasi-inverse.png"}
-                link={"https://link.springer.com/article/10.1007/s11633-016-1023-1"}
-              /><ResearchCard 
-                title={"Quasi-inverse pendulum model of 12 DoF bipedal walking"} 
-                description={"This paper presents modeling of a 12-degree of freedom (DoF) bipedal robot, focusing on the lower limbs of the system, and trajectory design for walking on straight path. Gait trajectories are designed by modeling of center of mass (CoM) trajectory and swing foot ankle trajectory based on stance foot ankle."} 
-                imageUrl={"/images/Quasi-inverse.png"}
-                link={"https://link.springer.com/article/10.1007/s11633-016-1023-1"}
-              /><ResearchCard 
-                title={"Quasi-inverse pendulum model of 12 DoF bipedal walking"} 
-                description={"This paper presents modeling of a 12-degree of freedom (DoF) bipedal robot, focusing on the lower limbs of the system, and trajectory design for walking on straight path. Gait trajectories are designed by modeling of center of mass (CoM) trajectory and swing foot ankle trajectory based on stance foot ankle."} 
-                imageUrl={"/images/Quasi-inverse.png"}
-                link={"https://link.springer.com/article/10.1007/s11633-016-1023-1"}
-              /><ResearchCard 
-                title={"Quasi-inverse pendulum model of 12 DoF bipedal walking"} 
-                description={"This paper presents modeling of a 12-degree of freedom (DoF) bipedal robot, focusing on the lower limbs of the system, and trajectory design for walking on straight path. Gait trajectories are designed by modeling of center of mass (CoM) trajectory and swing foot ankle trajectory based on stance foot ankle."} 
-                imageUrl={"/images/Quasi-inverse.png"}
-                link={"https://link.springer.com/article/10.1007/s11633-016-1023-1"}
-              /><ResearchCard 
-                title={"Quasi-inverse pendulum model of 12 DoF bipedal walking"} 
-                description={"This paper presents modeling of a 12-degree of freedom (DoF) bipedal robot, focusing on the lower limbs of the system, and trajectory design for walking on straight path. Gait trajectories are designed by modeling of center of mass (CoM) trajectory and swing foot ankle trajectory based on stance foot ankle."} 
-                imageUrl={"/images/Quasi-inverse.png"}
-                link={"https://www.worldscientific.com/doi/abs/10.1142/S0219519416300039"}
-              />
-              {/* Add more ResearchCard components as needed */}
+              {data.map((research) => (
+                <ResearchCard
+                  key={research.id}
+                  title={research.title}
+                  authors={research.authors}
+                  description={research.description}
+                  imageUrl={research.imageUrl}
+                  link={research.link}
+                />
+              ))}
             </div>
           </div>
         </div>
