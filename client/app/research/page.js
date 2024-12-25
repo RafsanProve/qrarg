@@ -87,7 +87,7 @@ export default function ResearchesPage() {
                 title={"Quasi-inverse pendulum model of 12 DoF bipedal walking"} 
                 description={"This paper presents modeling of a 12-degree of freedom (DoF) bipedal robot, focusing on the lower limbs of the system, and trajectory design for walking on straight path. Gait trajectories are designed by modeling of center of mass (CoM) trajectory and swing foot ankle trajectory based on stance foot ankle."} 
                 imageUrl={"/images/Quasi-inverse.png"}
-                link={"https://link.springer.com/article/10.1007/s11633-016-1023-1"}
+                link={"https://www.worldscientific.com/doi/abs/10.1142/S0219519416300039"}
               />
               {/* Add more ResearchCard components as needed */}
             </div>
