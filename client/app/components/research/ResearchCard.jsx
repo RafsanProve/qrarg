@@ -16,9 +16,9 @@ export default function HomeCard({ title, authors, tags, description, imageUrl, 
       </div>
 
       <div className="flex flex-row line-clamp-1 items-center justify-start gap-2 px-4 sm:px-8 md:px-18 mb-2">
-        <Tag name={tags ? tags : "Research"} />
-        <Tag name={tags ? tags : "Research"} />
-        <Tag name={tags ? tags : "Research"} />
+        {tags.map((tag, index) => (
+          <Tag key={index} tag={tag} />
+        ))}
       </div>
       {
       (link) 

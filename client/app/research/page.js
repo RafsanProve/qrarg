@@ -40,6 +40,9 @@ export default function ResearchesPage() {
   const [yearRange, setYearRange] = useState([getMinYear(), getMaxYear()]);
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [selectedFields, setSelectedFields] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [sortOrder, setSortOrder] = useState('null');
+  // const [itemsPerPage, setItemsPerPage] = useState(10);
 
   const categories = [
     'Journal',
@@ -100,6 +103,56 @@ export default function ResearchesPage() {
   };
 
 
+  const handleSearch = (e) => {
+    setSearchTerm(e.target.value);
+    onSearch(e.target.value);
+  };
+
+  const onSearch = (searchTerm) => {
+    const searchResults = data.filter((research) => {
+      const searchString = searchTerm.toLowerCase();
+      return (
+        research.title.toLowerCase().includes(searchString) ||
+        research.authors.some(author => author.toLowerCase().includes(searchString)) ||
+        research.description.toLowerCase().includes(searchString) ||
+        research.fields.some(field => field.toLowerCase().includes(searchString))
+      );
+    });
+    
+    setFilteredResults(searchResults);
+  };
+
+  const handleSortChange = (e) => {
+    setSortOrder(e.target.value);
+    onSort(e.target.value);
+  };
+
+  const onSort = (order) => {
+    const sortedResults = [...filteredResults].sort((a, b) => {
+      // Split the date string and create Date objects
+      const [dayA, monthA, yearA] = a.date.split('-');
+      const [dayB, monthB, yearB] = b.date.split('-');
+      const dateA = new Date(yearA, monthA - 1, dayA);
+      const dateB = new Date(yearB, monthB - 1, dayB);
+      
+      if(order === 'desc')
+        return dateB - dateA;
+      else if(order === 'asc')
+        return dateA - dateB;
+      // // Return comparison based on order
+      // return order === 'desc' ? dateB - dateA : dateA - dateB;
+    });
+    
+    setFilteredResults(sortedResults);
+  };
+
+  // const handleItemsPerPageChange = (e) => {
+  //   setItemsPerPage(e.target.value);
+  //   onItemsPerPage(Number(e.target.value));
+  // };
+
+
+
     return (
       <main className={roboto.className}>
         <Navbar />
@@ -107,8 +160,10 @@ export default function ResearchesPage() {
         <InfoSection />
         <div className="flex mx-8">
           {/* Sticky FilterBox */}
-          <div className="sticky top-20 w-1/5 h-screen overflow-y-auto">
-              <div className="sticky top-16 h-screen p-6 bg-white border border-zinc-200 rounded-lg shadow-sm">
+          {/* <div className="sticky top-20 w-1/5 h-screen overflow-y-auto">
+              <div className="sticky top-16 h-screen p-6 bg-white border border-zinc-200 rounded-lg shadow-sm"> */}
+          <div className="sticky top-20 w-1/5 h-[calc(100vh-5rem)] overflow-hidden">
+              <div className="h-full overflow-y-auto p-6 bg-white border border-zinc-200 rounded-lg shadow-sm">
                   <div className="mb-8">
                     <h4 className="mb-4 font-semibold text-lg text-zinc-800">Year</h4>
                     <Slider
@@ -172,14 +227,44 @@ export default function ResearchesPage() {
           </div>
         
           {/* Research Cards Grid */}
-          <div className="ml-6 flex-1">
-          <SearchBar />
+            <div className="ml-6 flex-1">
+              {/* Search bar */}
+            <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow border border-gray-300">
+              <input
+                type="text"
+                placeholder="Search..."
+                value={searchTerm}
+                onChange={handleSearch}
+                className="text-zinc-800 flex-1 px-4 py-2 border border-zinc-800 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              
+              <select
+                value={sortOrder}
+                onChange={handleSortChange}
+                className="text-zinc-800 px-4 py-2 border border-zinc-800 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >
+                <option value="null">Select Sorting</option>
+                <option value="desc">Newest First</option>
+                <option value="asc">Oldest First</option>
+              </select>
+
+              {/* <select
+                value={itemsPerPage}
+                onChange={handleItemsPerPageChange}
+                className="text-black px-4 py-2 border border-zinc-800 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >
+                <option value={15}>15 per page</option>
+                <option value={30}>30 per page</option>
+                <option value={45}>45 per page</option>
+              </select> */}
+            </div>
             <div className="grid grid-cols-3">
-              {filteredResults.map((research) => (
+              {filteredResults.map((research, index) => (
                 <ResearchCard
-                  key={research.id}
+                  key={`${research.id}-${index}`}
                   title={research.title}
                   authors={research.authors}
+                  tags={research.fields}
                   description={research.description}
                   imageUrl={research.imageUrl}
                   link={research.link}
