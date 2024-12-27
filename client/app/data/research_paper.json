@@ -4,7 +4,7 @@
         "authors": ["M. Akhtaruzzaman", "Amir A. Shafie", "Md. Raisuddin Khan"],
         "date": "14-04-2017",
         "category": "Journal",
-        "fields": ["GAIT", "Robotics", "Machine Learning", "Pattern Recognition"],
+        "fields": ["GAIT", "Robotics", "Machine Learning"],
         "description": "This paper presents modeling of a 12-degree of freedom (DoF) bipedal robot, focusing on the lower limbs of the system, and trajectory design for walking on straight path. Gait trajectories are designed by modeling of center of mass (CoM) trajectory and swing foot ankle trajectory based on stance foot ankle.",
         "imageUrl": "/images/Quasi-inverse.png",
         "link": "https://doi.org/10.1007/s11633-016-1023-1"
