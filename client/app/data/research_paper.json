@@ -2,6 +2,7 @@
     {
         "title": "Quasi-inverse pendulum model of 12 DoF bipedal walking",
         "authors": ["M. Akhtaruzzaman", "Amir A. Shafie", "Md. Raisuddin Khan"],
+        "date": "18-01-2017",
         "category": "Journal",
         "tags": ["keyword1", "keyword2"],
         "description": "This paper presents modeling of a 12-degree of freedom (DoF) bipedal robot, focusing on the lower limbs of the system, and trajectory design for walking on straight path. Gait trajectories are designed by modeling of center of mass (CoM) trajectory and swing foot ankle trajectory based on stance foot ankle.",
@@ -12,6 +13,7 @@
     {
         "title": "Analyzing Critical Success Factors for Sustainable Cloud-Based Mobile Learning (CBML) in Crisp and Fuzzy Environment",
         "authors": ["Quadri Noorulhasan Naveed", "Adel Ibrahim Qahmash", "Md Akhtaruzzaman"],
+        "date": "05-01-2023",
         "category": "Journal",
         "tags": ["keyword1", "keyword2"],
         "description": "The current study focuses on the assessment and ranking of various main factors and subfactors of CBML. Analytic hierarchy process-group decision-making (AHP-GDM)- and fuzzy analytic hierarchy process (FAHP)-based methodologies were used to evaluate and model the main factors and subfactors of CBML in crisp and fuzzy environments.",
@@ -22,6 +24,7 @@
     {
         "title": "A fuzzy model for predicting burn patient's intravenous fluid resuscitation rate",
         "authors": ["Sayma Alam Suha", "M. Akhtaruzzaman", "Tahsina Farah Sanam"],
+        "date": "10-06-2022",
         "category": "Journal",
         "tags": ["keyword1", "keyword2"],
         "description": "This research proposes a fuzzy logic based model to predict the adequate intravenous fluid resuscitation rate for a burn patient.",
@@ -32,6 +35,7 @@
     {
         "title": "LAND-ROBOT TECHNOLOGIES: THE INTEGRATION OF COGNITIVE SYSTEMS IN MILITARY AND DEFENSE",
         "authors": ["Muhammad Sanaullah", "M. Akhtaruzzaman", "Md Altab Hossain"],
+        "date": "26-12-2024",
         "category": "Journal",
         "tags": ["keyword1", "keyword2"],
         "description": "In this study, land-robots used in military defense system are focused and various types of land-robots are presented focusing on the technical specifications, control strategies, battle engagement, and purpose of use.",
@@ -42,6 +46,7 @@
     {
         "title": "Intelligent Head-bot, towards the Development of an AI Based Cognitive Platform.",
         "authors": ["Ramisha Fariha Baki", "M. Akhtaruzzaman", "Tahsin Ahmed Refat"],
+        "date": "28-12-2023",
         "category": "Journal",
         "tags": ["keyword1", "keyword2"],
         "description": "This study aims to develop an AI based humanoid head (head-bot) capable of imitating a range of expressions, recognizing individuals, and interacts with visitors through general conversation.",
@@ -52,6 +57,7 @@
     {
         "title": "Robot assisted knee joint RoM exercise: A PID parallel compensator architecture through impedance estimation.",
         "authors": ["M. Akhtaruzzaman", "Amir A. Shafie", "Md. Raisuddin Khan"],
+        "date": "27-11-2023",
         "category": "Journal",
         "tags": ["keyword1", "keyword2"],
         "description": "This paper aims to design and modeling of a robotic arm with an original approach in control strategy which is developed based on the correlation in between the joint-impedances and joint-motion characteristics during exercise.",
@@ -62,6 +68,7 @@
     {
         "title": "A no-code swarm simulation framework for agent-based modeling using nature-inspired algorithms.",
         "authors": ["Ishraq Hasan", "Rubyeat Islam", "Nusrat Sharmin"],
+        "date": "13-05-2024",
         "category": "Journal",
         "tags": ["keyword1", "keyword2"],
         "description": "The framework mainly proposes a no code environment and provides the opportunity to test the swarm behavior and relevant theories with flexibilities to make necessary adjustments.",
@@ -72,6 +79,7 @@
     {
         "title": "Modeling a fuzzy expert system for predicting customer's behavioral intention for restaurant business through parallel prediction of perceived values and satisfactions.",
         "authors": ["M. Akhtaruzzaman", "Fahim Shahryer", "Sachitra Halder"],
+        "date": "24-09-2024",
         "category": "Journal",
         "tags": ["keyword1", "keyword2"],
         "description": "This paper focuses on the modeling of a recommendation process for the restaurant industry. It is a challenge job for a restaurant owner to ascertain the intentions of customers to evaluate their services, further improve their profit margin.",
@@ -82,6 +90,7 @@
     {
         "title": "GAIT ANALYSIS: SYSTEMS, TECHNOLOGIES, AND IMPORTANCE.",
         "authors": ["M. Akhtaruzzaman", "Amir A. Shafie", "Md. Raisuddin Khan"],
+        "date": "23 -03-2016",
         "category": "Journal",
         "tags": ["keyword1", "keyword2"],
         "description": "This study presents an overview on gait mechanisms, common technologies used in gait analysis, and importance of this particular field of research.",

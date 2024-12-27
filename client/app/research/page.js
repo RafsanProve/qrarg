@@ -20,7 +20,17 @@ const roboto = Roboto_Condensed({
 export default function ResearchesPage() {
   const [filteredResults, setFilteredResults] = useState(data);
 
-  const [yearRange, setYearRange] = useState([2000, 2023]);
+  
+  const getMinYear = () => {
+    const years = data.map(research => research.date.split('-')[2]);
+    return Math.min(...years);
+  }
+  const getMaxYear = () => {
+    const years = data.map(research => research.date.split('-')[2]);
+    return Math.max(...years);
+  }
+
+  const [yearRange, setYearRange] = useState([getMinYear(), getMaxYear()]);
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [selectedFields, setSelectedFields] = useState([]);
 
@@ -42,7 +52,8 @@ export default function ResearchesPage() {
   const onFilterChange = ({ yearRange, categories, fields }) => {
     // Filter the data based on all criteria
     const filtered = data.filter(research => {
-      const yearMatch = research.year >= yearRange[0] && research.year <= yearRange[1];
+      const year = research.date.split('-')[2];
+      const yearMatch = year >= yearRange[0] && year <= yearRange[1];
       const categoryMatch = categories.length === 0 || categories.includes(research.category);
       const fieldMatch = fields.length === 0 || fields.includes(research.tags);
       
@@ -78,6 +89,7 @@ export default function ResearchesPage() {
     onFilterChange({ yearRange: yearRange, categories: selectedCategories , fields: updatedFields });
   };
 
+
     return (
       <main className={roboto.className}>
         <Navbar />
@@ -94,8 +106,8 @@ export default function ResearchesPage() {
                       value={yearRange}
                       onChange={handleYearChange}
                       valueLabelDisplay="auto"
-                      min={2000}
-                      max={2023}
+                      min={getMinYear()}
+                      max={getMaxYear()}
                     />
                     <div className="flex justify-between w-11/12 mt-2 text-zinc-800">
                       <span>{yearRange[0]}</span>

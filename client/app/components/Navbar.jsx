@@ -34,13 +34,13 @@ export default function Navbar() {
           <Link href="/">Home</Link>
           <Link href="/Expertise">Expertise</Link>
           <Link href="/Mission-Vision">Mission & Vision</Link>
-          <Link href="/Research-Areas">Research Areas</Link>
+          <Link href="/research">Research</Link>
+          <Link href="/Products">Products</Link>
           <Link href="/Publications">Publications</Link>
           <Link href="/Members">Members</Link>
           <Link href="/Events">Events</Link>
           <Link href="/Announcements">Announcements</Link>
           <Link href="/Achievements">Achievements</Link>
-          <Link href="/Products">Products</Link>
           <Link href="/About-us">About us</Link>
         </div>
       </div>
