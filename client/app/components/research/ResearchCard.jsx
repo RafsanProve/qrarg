@@ -9,15 +9,25 @@ export default function HomeCard({ title, authors, tags, description, imageUrl, 
       <h1 className="line-clamp-2 text-left w-full font-bold text-base sm:text-base md:text-xl mb-4 mt-4 px-4 sm:px-8 md:px-18">{title}</h1>
       
       {/* Authors section */}
-      <div className="flex flex-row items-center justify-start px-4 sm:px-8 md:px-18 mb-2">
+      {/* <div className="flex flex-row items-center justify-start px-4 sm:px-8 md:px-18 mb-2">
         <p className="text-sm text-gray-600 font-bold italic line-clamp-1">
           {authors ? authors.join(', ') : 'Anonymous'}
+        </p>
+      </div> */}
+
+      {/* Authors section */}
+      <div className="flex flex-row items-center justify-start px-4 sm:px-8 md:px-18 mb-2 group relative">
+        <p className="text-sm text-gray-600 font-bold italic line-clamp-1 cursor-pointer">
+          {authors ? authors.join(', ') : 'Anonymous'}
+          <span className="invisible group-hover:visible absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 bg-gray-900 text-white text-xs rounded whitespace-nowrap z-10">
+            {authors ? authors.join(', ') : 'Anonymous'}
+          </span>
         </p>
       </div>
 
       <div className="flex flex-row line-clamp-1 items-center justify-start gap-2 px-4 sm:px-8 md:px-18 mb-2">
         {tags.map((tag, index) => (
-          <Tag key={index} tag={tag} />
+          <Tag key={index} name={tag} />
         ))}
       </div>
       {

@@ -51,13 +51,13 @@ export default function Navbar() {
           <Link href="/" className="py-2">Home</Link>
           <Link href="/Expertise" className="py-2">Expertise</Link>
           <Link href="/Mission-Vision" className="py-2">Mission & Vision</Link>
-          <Link href="/Research-Areas" className="py-2">Research Areas</Link>
+          <Link href="/research" className="py-2">Research</Link>
+          <Link href="/Products" className="py-2">Products</Link>
           <Link href="/Publications" className="py-2">Publications</Link>
           <Link href="/Members" className="py-2">Members</Link>
           <Link href="/Events" className="py-2">Events</Link>
           <Link href="/Announcements" className="py-2">Announcements</Link>
           <Link href="/Achievements" className="py-2">Achievements</Link>
-          <Link href="/Products" className="py-2">Products</Link>
           <Link href="/About-us" className="py-2">About us</Link>
         </div>
       )}

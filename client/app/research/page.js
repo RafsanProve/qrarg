@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import ResearchCard from "../components/research/ResearchCard";
 import {Roboto_Condensed} from "next/font/google";
 // import FilterBox from "../components/research/FilterBox";
-import SearchBar from "../components/research/SearchBar";
+// import SearchBar from "../components/research/SearchBar";
 import InfoSection from "../components/research/InfoSection";
 import data from "../data/research_paper.json";
 import React, { useState } from "react";
@@ -158,12 +158,10 @@ export default function ResearchesPage() {
         <Navbar />
         <div className="bg-zinc-800 w-full h-16"></div>
         <InfoSection />
-        <div className="flex mx-8">
-          {/* Sticky FilterBox */}
-          {/* <div className="sticky top-20 w-1/5 h-screen overflow-y-auto">
-              <div className="sticky top-16 h-screen p-6 bg-white border border-zinc-200 rounded-lg shadow-sm"> */}
-          <div className="sticky top-20 w-1/5 h-[calc(100vh-5rem)] overflow-hidden">
-              <div className="h-full overflow-y-auto p-6 bg-white border border-zinc-200 rounded-lg shadow-sm">
+        <div className="flex flex-col md:flex-row mx-4 md:mx-8">
+          {/* Filter sidebar */}
+          <div className="w-full md:w-1/5 mb-4 md:mb-0 md:sticky md:top-20 md:h-[calc(100vh-5rem)] md:overflow-hidden">
+            <div className="h-full overflow-y-auto p-4 md:p-6 bg-white border border-zinc-200 rounded-lg shadow-sm">
                   <div className="mb-8">
                     <h4 className="mb-4 font-semibold text-lg text-zinc-800">Year</h4>
                     <Slider
@@ -223,52 +221,48 @@ export default function ResearchesPage() {
                       ))}
                     </FormGroup>
                   </div>
-              </div>
+            </div>
           </div>
         
-          {/* Research Cards Grid */}
-            <div className="ml-6 flex-1">
-              {/* Search bar */}
-            <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow border border-gray-300">
+          {/* Main content area */}
+          <div className="w-full md:ml-6 md:flex-1">
+            {/* Search bar container */}
+            <div className="flex flex-col sm:flex-row items-center gap-4 p-4 text-zinc-800 bg-white rounded-lg shadow border border-gray-300">
               <input
                 type="text"
                 placeholder="Search..."
                 value={searchTerm}
                 onChange={handleSearch}
-                className="text-zinc-800 flex-1 px-4 py-2 border border-zinc-800 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full sm:flex-1 px-4 py-2 border border-zinc-800 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               
               <select
                 value={sortOrder}
                 onChange={handleSortChange}
-                className="text-zinc-800 px-4 py-2 border border-zinc-800 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full sm:w-auto px-4 py-2 border border-zinc-800 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 <option value="null">Select Sorting</option>
                 <option value="desc">Newest First</option>
                 <option value="asc">Oldest First</option>
               </select>
-
-              {/* <select
-                value={itemsPerPage}
-                onChange={handleItemsPerPageChange}
-                className="text-black px-4 py-2 border border-zinc-800 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              >
-                <option value={15}>15 per page</option>
-                <option value={30}>30 per page</option>
-                <option value={45}>45 per page</option>
-              </select> */}
             </div>
-            <div className="grid grid-cols-3">
+
+            {/* Research cards grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
               {filteredResults.map((research, index) => (
-                <ResearchCard
+                <div 
                   key={`${research.id}-${index}`}
-                  title={research.title}
-                  authors={research.authors}
-                  tags={research.fields}
-                  description={research.description}
-                  imageUrl={research.imageUrl}
-                  link={research.link}
-                />
+                  className="transform transition-all duration-300 ease-in-out hover:scale-102 opacity-0 animate-fade-in"
+                >
+                  <ResearchCard
+                    title={research.title}
+                    authors={research.authors}
+                    tags={research.fields}
+                    description={research.description}
+                    imageUrl={research.imageUrl}
+                    link={research.link}
+                  />
+                </div>
               ))}
             </div>
           </div>
