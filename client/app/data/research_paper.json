@@ -2,9 +2,9 @@
     {
         "title": "Quasi-inverse pendulum model of 12 DoF bipedal walking",
         "authors": ["M. Akhtaruzzaman", "Amir A. Shafie", "Md. Raisuddin Khan"],
-        "date": "18-01-2017",
+        "date": "14-04-2017",
         "category": "Journal",
-        "tags": ["keyword1", "keyword2"],
+        "fields": ["GAIT", "Robotics", "Machine Learning", "Pattern Recognition"],
         "description": "This paper presents modeling of a 12-degree of freedom (DoF) bipedal robot, focusing on the lower limbs of the system, and trajectory design for walking on straight path. Gait trajectories are designed by modeling of center of mass (CoM) trajectory and swing foot ankle trajectory based on stance foot ankle.",
         "imageUrl": "/images/Quasi-inverse.png",
         "link": "https://doi.org/10.1007/s11633-016-1023-1"
@@ -15,7 +15,7 @@
         "authors": ["Quadri Noorulhasan Naveed", "Adel Ibrahim Qahmash", "Md Akhtaruzzaman"],
         "date": "05-01-2023",
         "category": "Journal",
-        "tags": ["keyword1", "keyword2"],
+        "fields": ["Cloud Computing", "Mobile Learning", "Fuzzy logic system"],
         "description": "The current study focuses on the assessment and ranking of various main factors and subfactors of CBML. Analytic hierarchy process-group decision-making (AHP-GDM)- and fuzzy analytic hierarchy process (FAHP)-based methodologies were used to evaluate and model the main factors and subfactors of CBML in crisp and fuzzy environments.",
         "imageUrl": "/images/Sustainable.png",
         "link": "https://doi.org/10.3390/su15021017"
@@ -26,7 +26,7 @@
         "authors": ["Sayma Alam Suha", "M. Akhtaruzzaman", "Tahsina Farah Sanam"],
         "date": "10-06-2022",
         "category": "Journal",
-        "tags": ["keyword1", "keyword2"],
+        "fields": ["Fuzzy logic system", "Intelligent System"],
         "description": "This research proposes a fuzzy logic based model to predict the adequate intravenous fluid resuscitation rate for a burn patient.",
         "imageUrl": "/images/Fuzzy.png",
         "link": "https://doi.org/10.1016/j.health.2022.100070"
@@ -35,12 +35,12 @@
     {
         "title": "LAND-ROBOT TECHNOLOGIES: THE INTEGRATION OF COGNITIVE SYSTEMS IN MILITARY AND DEFENSE",
         "authors": ["Muhammad Sanaullah", "M. Akhtaruzzaman", "Md Altab Hossain"],
-        "date": "26-12-2024",
+        "date": "04-01-2022",
         "category": "Journal",
-        "tags": ["keyword1", "keyword2"],
+        "fields": ["Robotics"],
         "description": "In this study, land-robots used in military defense system are focused and various types of land-robots are presented focusing on the technical specifications, control strategies, battle engagement, and purpose of use.",
         "imageUrl": "/images/Land-Robot.png",
-        "link": "https://ndcjournal.ndc.gov.bd/ndcj/index.php/ndcj"
+        "link": "https://ndcJournal.ndc.gov.bd/ndcj/index.php/ndcj"
     },
 
     {
@@ -48,7 +48,7 @@
         "authors": ["Ramisha Fariha Baki", "M. Akhtaruzzaman", "Tahsin Ahmed Refat"],
         "date": "28-12-2023",
         "category": "Journal",
-        "tags": ["keyword1", "keyword2"],
+        "fields": ["Robotics", "Machine Learning", "Artificial Intelligence"],
         "description": "This study aims to develop an AI based humanoid head (head-bot) capable of imitating a range of expressions, recognizing individuals, and interacts with visitors through general conversation.",
         "imageUrl": "/images/Intelli-bot.png",
         "link": "https://doi.org/10.47981/j.mijst.11(02)2023.440(01-14)"
@@ -59,7 +59,7 @@
         "authors": ["M. Akhtaruzzaman", "Amir A. Shafie", "Md. Raisuddin Khan"],
         "date": "27-11-2023",
         "category": "Journal",
-        "tags": ["keyword1", "keyword2"],
+        "fields": ["Robotics", "Machine Learning"],
         "description": "This paper aims to design and modeling of a robotic arm with an original approach in control strategy which is developed based on the correlation in between the joint-impedances and joint-motion characteristics during exercise.",
         "imageUrl": "/images/Knee-joint.png",
         "link": "https://doi.org/10.1016/j.cogr.2023.11.003"
@@ -70,7 +70,7 @@
         "authors": ["Ishraq Hasan", "Rubyeat Islam", "Nusrat Sharmin"],
         "date": "13-05-2024",
         "category": "Journal",
-        "tags": ["keyword1", "keyword2"],
+        "fields": ["Robotics"],
         "description": "The framework mainly proposes a no code environment and provides the opportunity to test the swarm behavior and relevant theories with flexibilities to make necessary adjustments.",
         "imageUrl": "/images/No-code.png",
         "link": "https://doi.org/10.1007/s41870-024-01910-1"
@@ -81,7 +81,7 @@
         "authors": ["M. Akhtaruzzaman", "Fahim Shahryer", "Sachitra Halder"],
         "date": "24-09-2024",
         "category": "Journal",
-        "tags": ["keyword1", "keyword2"],
+        "fields": ["Fuzzy logic system"],
         "description": "This paper focuses on the modeling of a recommendation process for the restaurant industry. It is a challenge job for a restaurant owner to ascertain the intentions of customers to evaluate their services, further improve their profit margin.",
         "imageUrl": "/images/Modeling-fuzzy.png",
         "link": "https://doi.org/10.1007/s41870-024-02217-x"
@@ -90,9 +90,9 @@
     {
         "title": "GAIT ANALYSIS: SYSTEMS, TECHNOLOGIES, AND IMPORTANCE.",
         "authors": ["M. Akhtaruzzaman", "Amir A. Shafie", "Md. Raisuddin Khan"],
-        "date": "23 -03-2016",
+        "date": "23-03-2016",
         "category": "Journal",
-        "tags": ["keyword1", "keyword2"],
+        "fields": ["GAIT", "Robotics", "Pattern Recognition"],
         "description": "This study presents an overview on gait mechanisms, common technologies used in gait analysis, and importance of this particular field of research.",
         "imageUrl": "/images/GAIT.png",
         "link": "http://dx.doi.org/10.1142/S0219519416300039"

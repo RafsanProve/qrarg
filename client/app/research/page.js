@@ -29,6 +29,13 @@ export default function ResearchesPage() {
     const years = data.map(research => research.date.split('-')[2]);
     return Math.max(...years);
   }
+  const getFields = () => {
+    const fields = data.map(research => research.fields);
+    var set = new Set();
+    fields.forEach(field => (field.forEach(f => set.add(f))));
+    // console.log(set);
+    return Array.from(set);
+  }
 
   const [yearRange, setYearRange] = useState([getMinYear(), getMaxYear()]);
   const [selectedCategories, setSelectedCategories] = useState([]);
@@ -41,26 +48,29 @@ export default function ResearchesPage() {
     'On going Research',
   ];
 
-  const fields = [
-    'Machine Intelligence & Learning',
-    'Robotics & Mechatronics',
-    'Intelligent Communication System',
-    'Quantum Mechanics and Computing',
-    'Security in Robotics and Intelligent System',
-  ];
+  const fields = getFields();
+  // [
+  //   'Machine Intelligence & Learning',
+  //   'Robotics & Mechatronics',
+  //   'Intelligent Communication System',
+  //   'Quantum Mechanics and Computing',
+  //   'Security in Robotics and Intelligent System',
+  // ];
+
+  console.log(fields);
 
   const onFilterChange = ({ yearRange, categories, fields }) => {
-    // Filter the data based on all criteria
+
     const filtered = data.filter(research => {
       const year = research.date.split('-')[2];
       const yearMatch = year >= yearRange[0] && year <= yearRange[1];
       const categoryMatch = categories.length === 0 || categories.includes(research.category);
-      const fieldMatch = fields.length === 0 || fields.includes(research.tags);
+      const fieldMatch = fields.length === 0 || fields.every(field => research.fields.some(tag => tag.includes(field)));
       
       return yearMatch && categoryMatch && fieldMatch;
     });
   
-    // Update the displayed results
+
     setFilteredResults(filtered);
   };  
 
@@ -96,7 +106,7 @@ export default function ResearchesPage() {
         <div className="bg-zinc-800 w-full h-16"></div>
         <InfoSection />
         <div className="flex mx-8">
-          {/* Fixed FilterBox */}
+          {/* Sticky FilterBox */}
           <div className="sticky top-20 w-1/5 h-screen overflow-y-auto">
               <div className="sticky top-16 h-screen p-6 bg-white border border-zinc-200 rounded-lg shadow-sm">
                   <div className="mb-8">
