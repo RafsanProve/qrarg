@@ -25,7 +25,7 @@ const FilterBox = ({ onFilterChange }) => {
 
   const handleYearChange = (event, newValue) => {
     setYearRange(newValue);
-    onFilterChange({ yearRange: newValue, categories: selectedCategories });
+    onFilterChange({ yearRange: newValue, categories: selectedCategories, fields: selectedFields });
   };
 
   const handleCategoryChange = (event) => {
@@ -35,7 +35,7 @@ const FilterBox = ({ onFilterChange }) => {
       : selectedCategories.filter(c => c !== category);
     
     setSelectedCategories(updatedCategories);
-    onFilterChange({ yearRange, categories: updatedCategories });
+    onFilterChange({ yearRange, categories: updatedCategories, fields: selectedFields });
   };
 
   const handleFieldChange = (event) => {
@@ -45,7 +45,7 @@ const FilterBox = ({ onFilterChange }) => {
       : selectedFields.filter(c => c !== field);
     
     setSelectedFields(updatedFields);
-    onFilterChange({ yearRange, fields: updatedFields });
+    onFilterChange({ yearRange, categories: selectedCategories , fields: updatedFields });
   };
 
   return (

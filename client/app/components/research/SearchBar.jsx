@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 export default function SearchBar({ onSearch, onSort, onItemsPerPage }){
   const [searchTerm, setSearchTerm] = useState('');
   const [sortOrder, setSortOrder] = useState('desc');
-  const [itemsPerPage, setItemsPerPage] = useState(10);
+  // const [itemsPerPage, setItemsPerPage] = useState(10);
 
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
@@ -17,10 +17,10 @@ export default function SearchBar({ onSearch, onSort, onItemsPerPage }){
     onSort(e.target.value);
   };
 
-  const handleItemsPerPageChange = (e) => {
-    setItemsPerPage(e.target.value);
-    onItemsPerPage(Number(e.target.value));
-  };
+  // const handleItemsPerPageChange = (e) => {
+  //   setItemsPerPage(e.target.value);
+  //   onItemsPerPage(Number(e.target.value));
+  // };
 
   return (
     <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow border border-gray-300">
@@ -41,16 +41,15 @@ export default function SearchBar({ onSearch, onSort, onItemsPerPage }){
         <option value="asc">Oldest First</option>
       </select>
 
-      <select
+      {/* <select
         value={itemsPerPage}
         onChange={handleItemsPerPageChange}
         className="text-black px-4 py-2 border border-zinc-800 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
       >
-        <option value={5}>5 per page</option>
-        <option value={10}>10 per page</option>
-        <option value={20}>20 per page</option>
-        <option value={50}>50 per page</option>
-      </select>
+        <option value={15}>15 per page</option>
+        <option value={30}>30 per page</option>
+        <option value={45}>45 per page</option>
+      </select> */}
     </div>
   );
 };
