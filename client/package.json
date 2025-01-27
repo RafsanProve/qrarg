@@ -15,7 +15,7 @@
     "@next/font": "^14.2.15",
     "embla-carousel-autoplay": "^8.5.1",
     "embla-carousel-react": "^8.5.1",
-    "next": "15.0.3",
+    "next": "^15.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },

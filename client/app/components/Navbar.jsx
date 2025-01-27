@@ -8,7 +8,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="bg-zinc-800 text-TEXT w-full fixed z-20">
+    <nav className="z-20 fixed bg-zinc-800 w-full text-TEXT">
       <div className="flex justify-between items-center px-4">
         <div className="flex items-center py-2">
           <Image src="/images/logo.png" alt="logo" width={50} height={50} />
@@ -30,9 +30,9 @@ export default function Navbar() {
         </button>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex gap-4">
+        <div className="lg:flex gap-4 hidden">
           <Link href="/">Home</Link>
-          <Link href="/Expertise">Expertise</Link>
+          <Link href="/expertise">Expertise</Link>
           <Link href="/Mission-Vision">Mission & Vision</Link>
           <Link href="/research">Research</Link>
           <Link href="/Products">Products</Link>
@@ -47,9 +47,9 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden flex flex-col items-center pb-4">
+        <div className="flex flex-col items-center lg:hidden pb-4">
           <Link href="/" className="py-2">Home</Link>
-          <Link href="/Expertise" className="py-2">Expertise</Link>
+          <Link href="/expertise" className="py-2">Expertise</Link>
           <Link href="/Mission-Vision" className="py-2">Mission & Vision</Link>
           <Link href="/research" className="py-2">Research</Link>
           <Link href="/Products" className="py-2">Products</Link>
