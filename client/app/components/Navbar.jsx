@@ -3,12 +3,11 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
 
-
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="bg-zinc-800 text-TEXT w-full fixed z-20">
+    <nav className="z-20 fixed bg-zinc-800 w-full text-TEXT">
       <div className="flex justify-between items-center px-4">
         <div className="flex items-center py-2">
           <Image src="/images/logo.png" alt="logo" width={50} height={50} />
@@ -30,35 +29,35 @@ export default function Navbar() {
         </button>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex gap-4">
-          <Link href="/">Home</Link>
-          <Link href="/Expertise">Expertise</Link>
-          <Link href="/Mission-Vision">Mission & Vision</Link>
-          <Link href="/research">Research</Link>
-          <Link href="/Products">Products</Link>
-          <Link href="/Publications">Publications</Link>
-          <Link href="/Members">Members</Link>
-          <Link href="/Events">Events</Link>
-          <Link href="/Announcements">Announcements</Link>
-          <Link href="/Achievements">Achievements</Link>
-          <Link href="/About-us">About us</Link>
+        <div className="lg:flex hidden h-full">
+          <Link href="/" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Home</Link>
+          <Link href="/expertise" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Expertise</Link>
+          <Link href="/Mission-Vision" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Mission & Vision</Link>
+          <Link href="/research" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Research</Link>
+          <Link href="/Products" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Products</Link>
+          <Link href="/Publications" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Publications</Link>
+          <Link href="/Members" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Members</Link>
+          <Link href="/Events" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Events</Link>
+          <Link href="/Announcements" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Announcements</Link>
+          <Link href="/Achievements" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Achievements</Link>
+          <Link href="/About-us" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">About us</Link>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden flex flex-col items-center pb-4">
-          <Link href="/" className="py-2">Home</Link>
-          <Link href="/Expertise" className="py-2">Expertise</Link>
-          <Link href="/Mission-Vision" className="py-2">Mission & Vision</Link>
-          <Link href="/research" className="py-2">Research</Link>
-          <Link href="/Products" className="py-2">Products</Link>
-          <Link href="/Publications" className="py-2">Publications</Link>
-          <Link href="/Members" className="py-2">Members</Link>
-          <Link href="/Events" className="py-2">Events</Link>
-          <Link href="/Announcements" className="py-2">Announcements</Link>
-          <Link href="/Achievements" className="py-2">Achievements</Link>
-          <Link href="/About-us" className="py-2">About us</Link>
+        <div className="flex flex-col items-center lg:hidden pb-4">
+          <Link href="/" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Home</Link>
+          <Link href="/expertise" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Expertise</Link>
+          <Link href="/Mission-Vision" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Mission & Vision</Link>
+          <Link href="/research" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Research</Link>
+          <Link href="/Products" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Products</Link>
+          <Link href="/Publications" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Publications</Link>
+          <Link href="/Members" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Members</Link>
+          <Link href="/Events" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Events</Link>
+          <Link href="/Announcements" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Announcements</Link>
+          <Link href="/Achievements" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Achievements</Link>
+          <Link href="/About-us" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">About us</Link>
         </div>
       )}
     </nav>
