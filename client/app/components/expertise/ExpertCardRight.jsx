@@ -12,15 +12,36 @@ export default function ExpertCardLeft({ name, position, imageSrc, imageAlt, des
                 {description}
             </p>
             <div className="flex flex-row justify-center md:justify-end items-end gap-3">
+                {facebook && (
                 <Link href={facebook} target="_blank" rel="noopener noreferrer">
                     <Image src="/svgs/facebook-icon-black.svg" alt="facebook" width={25} height={25} />
                 </Link>
+                )}
+                {linkedin && (
                 <Link href={linkedin} target="_blank" rel="noopener noreferrer">
                     <Image src="/svgs/linkedin-icon-black.svg" alt="LinkedIn" width={25} height={25} />
                 </Link>
+                )}
+                {whatsapp && (
                 <Link href={whatsapp} target="_blank" rel="noopener noreferrer">
                     <Image src="/svgs/whatsapp-icon-black.svg" alt="WhatsApp" width={25} height={25} />
                 </Link>
+                )}
+                {researchgate && (
+                <Link href={researchgate} target="_blank" rel="noopener noreferrer">
+                    <Image src="/svgs/researchgate-icon-black.svg" alt="ResearchGate" width={23} height={23} />
+                </Link>
+                )}
+                {googleScholar && (
+                <Link href={googleScholar} target="_blank" rel="noopener noreferrer">
+                    <Image src="/svgs/google-scholar-icon-black.svg" alt="Google Scholar" width={25} height={25} />
+                </Link>
+                )}
+                {email && (
+                <Link href={`mailto:${email}`} target="_blank" rel="noopener noreferrer">
+                    <Image src="/svgs/email-icon-black.svg" alt="Email" width={30} height={30} />
+                </Link>
+                )}
             </div>
         </div>
         <Image 
