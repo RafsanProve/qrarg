@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "name": "Search Algorithm Visualization",
+        "description": "This is a web-based application that visualizes the search algorithms. The application is developed using ReactJS",
+        "link": "https://opsimdaz.qrarg.com/",
+        "research_paper": "",
+        "imageUrl": "/images/SearchAlgorithm.png"
+    },
+    {
+        "id": 2,
+        "name": "AKI",
+        "description": "Welcome to the Artificial Kinetic Intelligence system, where advanced data analysis and intelligent decision-making meet. Explore insights, power your projects, and achieve remarkable outcomes with our AI-driven tools.",
+        "link": "https://aki.qrarg.com/",
+        "research_paper": "",
+        "imageUrl": "/images/AKI.png"
+    }
+]
