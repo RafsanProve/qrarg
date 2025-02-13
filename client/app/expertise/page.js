@@ -79,9 +79,9 @@ export default function Home() {
     imageAlt={"Prof. Madya Dr. Mohammad Kamrul Hasan"}
     description={"Mohammad Kamrul Hasan currently an Associate Professor and Head of the Network and Communication Technology Research Lab with the Center for Cyber Security, Universiti Kebangsaan Malaysia. He completed his Doctor of Philosophy degree in electrical and communication engineering from the Faculty of Engineering, International Islamic University, Malaysia, in 2016. Prior to that, he earned an M.Sc. in Communication Engineering from the Department of Electrical and Computer Engineering, International Islamic University, Malaysia, in 2012. He has been awarded the gold medal for his research work and many achievements, including the young scientist award and Full Bright scholarship sponsored by the Ministry of Higher Education Malaysia. Dr. Kamrul has been a Senior Member of the Institute of Electrical and Electronics Engineers since 2013. Before starting the doctoral study, Dr. Kamrul served the related industry for ten (10) years in the area of computer networks and security, communication systems and networks, Wide Area Network design/planning using PLC, PMU, SCADA Wide Area Measurement System. His research interest in cutting-edge information-centric networks, computer networks, data communication and security, mobile network and privacy protection, cyber-physical systems, the Industrial IoT, transparent AI, Smart grid networks and applications, and electric vehicle networks. He has published over 250 indexed papers in ranked journals and conference proceedings."}
     email={"mkhasan@ukm.edu.my"}
-    linkedin={"https://www.linkedin.com/in/kamrul-hasan-61613110/"}
+    linkedin={"https://www.linkedin.com/in/mohammad-kamrul-hasan-43ab5134/"}
     researchgate={"https://www.researchgate.net/profile/Mohammad-Kamrul-Hasan-5"}
-    googleScholar={"https://scholar.google.com/citations?user=hasankamrul@ieee.org"}
+    googleScholar={"https://scholar.google.com/citations?user=IAybniwAAAAJ&hl=en&authuser=1"}
     phone={"+8801714121656"}
     />
     <ExpertCardRight
