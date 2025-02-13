@@ -11,7 +11,7 @@ return (
         </span>
         <span className="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full bg-indigo-600 rounded-md group-hover:translate-x-0" />
         <span className="relative w-1/5 text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white">
-            <Link href={link} target="_blank" className="text-white font-bold w-32 h-10 transition duration-700 ease-in-out hover:text-blue-500 hover:scale-105 hover:drop-shadow-xl flex items-center justify-center rounded-[4px] mt-auto mx-4 self-start">
+            <Link href={link} target="_blank" className="text-white font-bold w-32 h-10 transition duration-700 ease-in-out hover:scale-105 hover:drop-shadow-xl flex items-center justify-center rounded-[4px] mt-auto mx-4 self-start">
                 Visit
             </Link>
         </span>
