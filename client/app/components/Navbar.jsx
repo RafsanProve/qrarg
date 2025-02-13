@@ -32,7 +32,7 @@ export default function Navbar() {
         <div className="lg:flex hidden h-full">
           <Link href="/" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Home</Link>
           <Link href="/expertise" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Expertise</Link>
-          <Link href="/Mission-Vision" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Mission & Vision</Link>
+          <Link href="/mission-vision" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Mission & Vision</Link>
           <Link href="/research" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Research</Link>
           <Link href="/products" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Products</Link>
           <Link href="/Publications" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Publications</Link>
@@ -49,7 +49,7 @@ export default function Navbar() {
         <div className="flex flex-col items-center lg:hidden pb-4">
           <Link href="/" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Home</Link>
           <Link href="/expertise" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Expertise</Link>
-          <Link href="/Mission-Vision" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Mission & Vision</Link>
+          <Link href="/mission-vision" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Mission & Vision</Link>
           <Link href="/research" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Research</Link>
           <Link href="/products" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Products</Link>
           <Link href="/Publications" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Publications</Link>
