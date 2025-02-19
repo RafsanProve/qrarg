@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const VisionMission = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-[#113463] p-6">
-      <div className="w-[600px] bg-white shadow-lg">
+    // <div className="flex justify-center items-center min-h-screen bg-[#113463] p-6">
+      <div className="w-full bg-white shadow-lg">
         {/* Header Section */}
         <div className="relative bg-[#113463] p-6 text-center">
           <Image
@@ -16,49 +16,39 @@ const VisionMission = () => {
         </div>
 
         {/* Image Collage */}
-        <div className="relative bg-[#113463] p-6 pb-12">
-          <div className="grid grid-cols-2 gap-4">
-            <div className="col-span-2 flex justify-center">
+        {/* <div className="relative bg-[#113463] p-6 pb-12"> */}
+          <div className="grid grid-cols-2 -gap-2">
+            <div className="col-span-2 flex justify-end mr-80 -mb-24">
               <Image
                 src="/images/photometric-hero2.png"
                 alt="Image 1"
                 width={300}
-                height={200}
-                className="rounded-lg border-4 border-white rotate-45"
+                height={300}
+                className="rounded-lg border-4 border-white rotate-45 w-[350px] h-[350px]"
               />
             </div>
-            <div className="col-span-1">
-              <Image
-                src="/images/forcasting-hero.png"
-                alt="Image 2"
-                width={150}
-                height={100}
-                className="rounded-lg border-4 border-white -rotate-45"
-              />
-            </div>
-            <div className="col-span-1">
+            <div className="col-span-2 flex justify-end mr-[76px] -mb-24">
               <Image
                 src="/images/fuzzy-hero.png"
-                alt="Image 3"
-                width={150}
-                height={100}
-                className="rounded-lg border-4 border-white rotate-45"
+                alt="Image 4"
+                width={200}
+                height={200}
+                className="rounded-lg border-4 border-white rotate-45 w-[350px] h-[350px]"
               />
             </div>
-            <div className="col-span-2 flex justify-center">
+            <div className="col-span-2 flex justify-end mr-80">
               <Image
                 src="/images/fuzzy-hero.png"
                 alt="Image 4"
                 width={300}
-                height={200}
-                className="rounded-lg border-4 border-white -rotate-45"
+                height={300}
+                className="rounded-lg border-4 border-white -rotate-45 w-[350px] h-[350px]"
               />
             </div>
           </div>
-        </div>
-
+        {/* </div> */}
         {/* Vision & Mission Section */}
-        <div className="bg-white p-6 text-[#113463]">
+        <div className="bg-white p-6 text-zinc-800">
           <h2 className="text-xl font-bold uppercase">Vision</h2>
           <p className="text-sm font-semibold mt-2">
             HELPING HAND AS A LEADER.. EMPOWERING LIVES, CREATING OPPORTUNITIES
@@ -74,7 +64,7 @@ const VisionMission = () => {
           </p>
         </div>
       </div>
-    </div>
+    // </div>
   );
 };
 
