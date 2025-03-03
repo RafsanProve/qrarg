@@ -12,7 +12,7 @@ export default function Overview() {
             width={200} 
             height={20}
         />
-        </div>
+      </div>
 
       <p className="text-base sm:text-xl md:text-2xl px-4 sm:px-8 md:px-18 mb-4 leading-relaxed">
         <b>Quantum Robotics & Automation Research Group(QRARG)</b> is dedicated to <br className="hidden md:block" />
