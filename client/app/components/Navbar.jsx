@@ -40,7 +40,7 @@ export default function Navbar() {
           {/* <Link href="/Events" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Events</Link>
           <Link href="/Announcements" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Announcements</Link>
           <Link href="/Achievements" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Achievements</Link> */}
-          <Link href="/About-us" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">About us</Link>
+          <Link href="/about-us" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">About us</Link>
         </div>
       </div>
 
@@ -57,7 +57,7 @@ export default function Navbar() {
           {/* <Link href="/Events" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Events</Link>
           <Link href="/Announcements" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Announcements</Link>
           <Link href="/Achievements" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Achievements</Link> */}
-          <Link href="/About-us" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">About us</Link>
+          <Link href="/about-us" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">About us</Link>
         </div>
       )}
     </nav>
