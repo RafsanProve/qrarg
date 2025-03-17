@@ -20,7 +20,7 @@ return (
         {/* Right section with image */}
         <div className="absolute top-0 right-0 w-full md:w-[50%] h-full">
             <Image
-            src= "/images/hero-mission-vision.jpg" // {image} // "/placeholder.svg?height=800&width=600"
+            src= "/images/research02.jpg"// "/images/hero-mission-vision.jpg" // {image} // "/placeholder.svg?height=800&width=600"
             alt="Research collaboration"
             fill
             className="object-cover"
