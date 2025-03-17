@@ -13,9 +13,9 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "QRARG",
-  description: "Quantum Robotics & Automation Research Group",
-};
+  title: "QRARG - Quantum Robotics & Automation Research Group",
+  description: "Pioneering the future of quantum technology and robotics through innovative research and development",
+}
 
 export default function RootLayout({ children }) {
   return (
