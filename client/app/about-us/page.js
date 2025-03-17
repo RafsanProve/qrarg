@@ -7,7 +7,6 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Hero from "../components/about-us/Hero"
 import Story from "../components/about-us/Story"
-import MissionVission from "../components/about-us/Mission-Vission"
 import CoreValues from "../components/about-us/Core-Values"
 import Timeline from "../components/about-us/Timeline"
 import Leadership from "../components/about-us/Leadership"
@@ -29,7 +28,6 @@ return (
             <Navbar />
             <Hero />
             <Story />
-            {/* <MissionVission /> */}
             <CoreValues />
             <Timeline />
             <Leadership />
