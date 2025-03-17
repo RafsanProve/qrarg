@@ -32,18 +32,18 @@ const useCountUp = (end, duration = 2000) => {
 const AchievementItem = ({ icon, label, value}) => {
     const count = useCountUp(value)
 
-return (
-    <div className="bg-zinc-800 p-6 rounded-lg text-white text-center">
-        <Image src={icon || "/placeholder.svg"} alt={label} className="w-12 h-12 mx-auto mb-4" width={48} height={48} />
-        <h3 className="text-lg font-semibold mb-2">{label}</h3>
-        <p className="text-4xl font-bold">{count}</p>
-    </div>
-    )
+    return (
+        <div className="bg-zinc-800 p-12 rounded-lg text-white text-center transition duration-700 ease-in-out hover:scale-105">
+            <Image src={icon || "/placeholder.svg"} alt={label} className="w-12 h-12 mx-auto mb-4" width={48} height={48} />
+            <h3 className="text-lg font-semibold mb-2">{label}</h3>
+            <p className="text-4xl font-bold">{count}</p>
+        </div>
+        )
 }
 
 export default function AchievementsSection() {
 return (
-    <div className="relative w-full bg-white py-12">
+    <div className=" w-full bg-white text-zinc-800 rounded-3xl p-4 shadow-lg flex flex-col items-center justify-center h-full max-w-7xl mx-auto text-center pb-10 mt-20 sm:mx-8 md:mx-auto py-12">
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-5xl text-zinc-800 font-bold text-center mb-12">Key Achievements</h2>
             <div className="flex justify-center">

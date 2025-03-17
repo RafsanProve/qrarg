@@ -14,7 +14,6 @@ const roboto = Roboto_Condensed({
 const VisionMission = () => {
   return (
     <main className={roboto.className}>
-      <div className="w-full bg-white shadow-lg">
         <Navbar />
         <div className="bg-zinc-800 w-full h-16"></div>
         <ImageCollage2 />
@@ -22,7 +21,7 @@ const VisionMission = () => {
 
         
         {/* Vision & Mission Section */}
-        <div className="bg-white p-6 md:p-12 text-zinc-800 max-w-5xl mx-auto">
+        <div className="bg-white p-6 md:p-12 shadow-lg text-zinc-800 rounded-3xl max-w-7xl mx-auto pb-10 mt-20 sm:mx-8 md:mx-auto py-12">
           <div className="mb-10">
               <h1 className="text-4xl md:text-5xl text-zinc-800 font-bold text-center mb-4">Mission & Vision</h1>
               {/* <div className="w-32 h-1 bg-zinc-800 mx-auto mb-10"></div> */}
@@ -58,7 +57,6 @@ const VisionMission = () => {
               </p>
           </div>
         </div>
-      </div>
       <Footer />
     </main>
   );
