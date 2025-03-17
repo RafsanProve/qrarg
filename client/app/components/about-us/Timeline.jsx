@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Award, BookOpen, Calendar, Globe, Lightbulb, Users } from "lucide-react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs"
 
@@ -90,16 +91,22 @@ const organization = [
 
 export default function Timeline() {
 return (
-    <section className="py-16 bg-slate-50">
+    <section className="py-16 bg-white text-zinc-800 rounded-3xl p-4 shadow-xl flex flex-col items-center justify-center h-full max-w-7xl mx-auto text-center pb-10 mt-20 sm:mx-8 md:mx-auto">
         <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-zinc-800 text-3xl font-bold mb-4">Our Journey</h2>
-            <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
-            <p className="text-lg text-slate-700">Key milestones in our research and organizational development.</p>
+            <div className="max-w-3xl mx-auto flex flex-col items-center mb-12">
+                <h2 className="text-zinc-800 text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Our Journey</h2>
+                <Image 
+                    src="/svgs/Underlines.svg" 
+                    alt="underline" 
+                    className="-mt-2 mb-6 w-48 md:w-56 lg:w-64"
+                    width={200} 
+                    height={20}
+                />
+                <p className="text-xl text-slate-700">Key milestones in our research and organizational development.</p>
             </div>
 
             <div className="max-w-4xl mx-auto">
-            <Tabs defaultValue="all" className="w-full text-zinc-800">
+            <Tabs defaultValue="all" className="w-full text-zinc-800 text-lg">
                 <TabsList className="grid w-full grid-cols-3">
                 <TabsTrigger value="all">All Milestones</TabsTrigger>
                 <TabsTrigger value="research">Research</TabsTrigger>

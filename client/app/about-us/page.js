@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Hero from "../components/about-us/Hero"
 import Story from "../components/about-us/Story"
-import MissionVission from "../components/about-us/MIssion-Vission"
+import MissionVission from "../components/about-us/Mission-Vission"
 import CoreValues from "../components/about-us/Core-Values"
 import Timeline from "../components/about-us/Timeline"
 import Leadership from "../components/about-us/Leadership"
@@ -25,7 +25,7 @@ const roboto = Roboto_Condensed({
 export default function AboutPage() {
 return (
     <main className={roboto.className}>
-        <div className="flex flex-col min-h-screen w-full">
+        {/* <div className="flex flex-col min-h-screen w-full"> */}
             <Navbar />
             <Hero />
             <Story />
@@ -35,7 +35,7 @@ return (
             <Leadership />
             <Partners />
             <Footer />
-        </div>
+        {/* </div> */}
     </main>
 )
 }
