@@ -2,9 +2,18 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
+import { usePathname } from 'next/navigation'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const pathname = usePathname()
+  const link_style_desktop = "transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex flex-col items-center gap-1 relative"
+  const underline = <span className="rounded-md bottom-2 w-4/5 h-1 bg-white"></span>
+
+  // Function to check if a link is active
+  const isActive = (path) => {
+    return pathname === path
+  }
 
   return (
     <nav className="z-20 fixed bg-zinc-800 w-full text-TEXT">
@@ -30,34 +39,76 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="lg:flex hidden h-full">
-          <Link href="/" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Home</Link>
-          <Link href="/expertise" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Expertise</Link>
-          <Link href="/mission-vision" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Mission & Vision</Link>
-          <Link href="/research" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Research</Link>
-          <Link href="/products" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Products</Link>
-          <Link href="/Publications" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Publications</Link>
-          <Link href="/Members" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Members</Link>
-          {/* <Link href="/Events" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Events</Link>
-          <Link href="/Announcements" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Announcements</Link>
-          <Link href="/Achievements" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">Achievements</Link> */}
-          <Link href="/about-us" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex items-center">About us</Link>
+          <Link href="/" className={`${link_style_desktop} ${isActive('/') ? 'font-bold' : ''}`}>
+            Home
+            {isActive('/') && underline}
+          </Link>
+          <Link href="/expertise" className={`${link_style_desktop} ${isActive('/expertise') ? 'font-bold' : ''}`}>
+            Expertise
+            {isActive('/expertise') && underline}
+          </Link>
+          <Link href="/mission-vision" className={`${link_style_desktop} ${isActive('/mission-vision') ? 'font-bold' : ''}`}>
+            Mission & Vision
+            {isActive('/mission-vision') && underline}
+          </Link>
+          <Link href="/research" className={`${link_style_desktop} ${isActive('/research') ? 'font-bold' : ''}`}>
+            Research
+            {isActive('/research') && underline}
+          </Link>
+          <Link href="/products" className={`${link_style_desktop} ${isActive('/products') ? 'font-bold' : ''}`}>
+            Products
+            {isActive('/products') && underline}
+          </Link>
+          <Link href="/Publications" className={`${link_style_desktop} ${isActive('/Publications') ? 'font-bold' : ''}`}>
+            Publications
+            {isActive('/Publications') && underline}
+          </Link>
+          <Link href="/Members" className={`${link_style_desktop} ${isActive('/Members') ? 'font-bold' : ''}`}>
+            Members
+            {isActive('/Members') && underline}
+          </Link>
+          <Link href="/about-us" className={`${link_style_desktop} ${isActive('/about-us') ? 'font-bold' : ''}`}>
+            About us
+            {isActive('/about-us') && underline}
+          </Link>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
         <div className="flex flex-col items-center lg:hidden pb-4">
-          <Link href="/" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Home</Link>
-          <Link href="/expertise" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Expertise</Link>
-          <Link href="/mission-vision" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Mission & Vision</Link>
-          <Link href="/research" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Research</Link>
-          <Link href="/products" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Products</Link>
-          <Link href="/Publications" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Publications</Link>
-          <Link href="/Members" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Members</Link>
-          {/* <Link href="/Events" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Events</Link>
-          <Link href="/Announcements" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Announcements</Link>
-          <Link href="/Achievements" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">Achievements</Link> */}
-          <Link href="/about-us" className="transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center">About us</Link>
+          <Link href="/" className={`transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center relative ${isActive('/') ? 'font-bold' : ''}`}>
+            Home
+            {isActive('/') && underline}
+          </Link>
+          <Link href="/expertise" className={`transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center relative ${isActive('/expertise') ? 'font-bold' : ''}`}>
+            Expertise
+            {isActive('/expertise') && underline}
+          </Link>
+          <Link href="/mission-vision" className={`transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center relative ${isActive('/mission-vision') ? 'font-bold' : ''}`}>
+            Mission & Vision
+            {isActive('/mission-vision') && underline}
+          </Link>
+          <Link href="/research" className={`transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center relative ${isActive('/research') ? 'font-bold' : ''}`}>
+            Research
+            {isActive('/research') && underline}
+          </Link>
+          <Link href="/products" className={`transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center relative ${isActive('/products') ? 'font-bold' : ''}`}>
+            Products
+            {isActive('/products') && underline}
+          </Link>
+          <Link href="/Publications" className={`transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center relative ${isActive('/Publications') ? 'font-bold' : ''}`}>
+            Publications
+            {isActive('/Publications') && underline}
+          </Link>
+          <Link href="/Members" className={`transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center relative ${isActive('/Members') ? 'font-bold' : ''}`}>
+            Members
+            {isActive('/Members') && underline}
+          </Link>
+          <Link href="/about-us" className={`transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center relative ${isActive('/about-us') ? 'font-bold' : ''}`}>
+            About us
+            {isActive('/about-us') && underline}
+          </Link>
         </div>
       )}
     </nav>
