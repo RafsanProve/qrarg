@@ -8,6 +8,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const pathname = usePathname()
   const link_style_desktop = "transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 px-3 py-4 h-full flex flex-col items-center gap-1 relative"
+  const link_style_mobile = "transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full flex flex-col items-center gap-1 relative"
   const underline = <span className="rounded-md bottom-2 w-4/5 h-1 bg-white"></span>
 
   // Function to check if a link is active
@@ -77,35 +78,35 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="flex flex-col items-center lg:hidden pb-4">
-          <Link href="/" className={`transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center relative ${isActive('/') ? 'font-bold' : ''}`}>
+          <Link href="/" className={`${link_style_mobile} ${isActive('/') ? 'font-bold' : ''}`}>
             Home
             {isActive('/') && underline}
           </Link>
-          <Link href="/expertise" className={`transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center relative ${isActive('/expertise') ? 'font-bold' : ''}`}>
+          <Link href="/expertise" className={`${link_style_mobile} ${isActive('/expertise') ? 'font-bold' : ''}`}>
             Expertise
             {isActive('/expertise') && underline}
           </Link>
-          <Link href="/mission-vision" className={`transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center relative ${isActive('/mission-vision') ? 'font-bold' : ''}`}>
+          <Link href="/mission-vision" className={`${link_style_mobile} ${isActive('/mission-vision') ? 'font-bold' : ''}`}>
             Mission & Vision
             {isActive('/mission-vision') && underline}
           </Link>
-          <Link href="/research" className={`transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center relative ${isActive('/research') ? 'font-bold' : ''}`}>
+          <Link href="/research" className={`${link_style_mobile} ${isActive('/research') ? 'font-bold' : ''}`}>
             Research
             {isActive('/research') && underline}
           </Link>
-          <Link href="/products" className={`transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center relative ${isActive('/products') ? 'font-bold' : ''}`}>
+          <Link href="/products" className={`${link_style_mobile} ${isActive('/products') ? 'font-bold' : ''}`}>
             Products
             {isActive('/products') && underline}
           </Link>
-          <Link href="/Publications" className={`transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center relative ${isActive('/Publications') ? 'font-bold' : ''}`}>
+          <Link href="/Publications" className={`${link_style_mobile} ${isActive('/Publications') ? 'font-bold' : ''}`}>
             Publications
             {isActive('/Publications') && underline}
           </Link>
-          <Link href="/Members" className={`transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center relative ${isActive('/Members') ? 'font-bold' : ''}`}>
+          <Link href="/Members" className={`${link_style_mobile} ${isActive('/Members') ? 'font-bold' : ''}`}>
             Members
             {isActive('/Members') && underline}
           </Link>
-          <Link href="/about-us" className={`transition duration-400 ease-in-out hover:bg-white hover:text-zinc-800 py-2 w-full text-center relative ${isActive('/about-us') ? 'font-bold' : ''}`}>
+          <Link href="/about-us" className={`${link_style_mobile} ${isActive('/about-us') ? 'font-bold' : ''}`}>
             About us
             {isActive('/about-us') && underline}
           </Link>
