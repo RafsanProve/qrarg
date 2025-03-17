@@ -1,16 +1,23 @@
+import Image from "next/image"
 import { ArrowRight, Lightbulb, Target } from "lucide-react"
 import { Card, CardContent } from "../ui/card"
 export default function MissionVission() {
 return (
-    <section className="py-16 bg-slate-50">
+    <section className="py-16 bg-white text-zinc-800 rounded-3xl p-4 shadow-2xl flex flex-col items-center justify-center h-full max-w-7xl mx-auto text-center pb-10 mt-20 sm:mx-8 md:mx-auto">
         <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-zinc-800 text-3xl font-bold mb-4">Mission & Vision</h2>
-            <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
-        </div>
+        <div className="max-w-3xl mx-auto flex flex-col items-center mb-12">
+            <h2 className="text-zinc-800 text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Mission & Vision</h2>
+            <Image   
+                src="/svgs/Underlines.svg" 
+                alt="underline" 
+                className="-mt-2 mb-6 w-48 md:w-56 lg:w-64"
+                width={200} 
+                height={20}
+            />        
+            </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <Card className="bg-white shadow-md border-none">
+            <Card className="bg-white shadow-lg border-none">
             <CardContent className="pt-6">
                 <div className="flex flex-col items-center text-center mb-6">
                 <div className="w-16 h-16 rounded-full bg-zinc-800/15 flex items-center justify-center mb-4">
