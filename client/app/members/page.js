@@ -22,6 +22,14 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs"
 import Hero from "../components/about-us/Hero"
 import Navbar from "../components/Navbar"
 
+import {Roboto_Condensed} from "next/font/google";
+
+const roboto = Roboto_Condensed({
+    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+    style: ["normal", "italic"],
+    subsets: ["latin"],
+});
+
 
 const teamMembers = [
     // Leadership
@@ -239,7 +247,7 @@ const teamMembers = [
 export default function MembersPage() {
   // Sample team members data
 return (
-    <div className="flex flex-col min-h-screen ">
+  <main className={roboto.className}>
     <Navbar />
       <Hero 
       title = "Our Team"
@@ -251,14 +259,14 @@ return (
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row gap-4 items-center">
             <div className="relative w-full md:w-96">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
-              <Input placeholder="Search team members..." className="pl-10" />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-800" />
+              <Input placeholder="Search team members..." className="pl-10 text-zinc-800 border-gray-600" />
             </div>
             <div className="flex flex-wrap gap-2 w-full md:w-auto">
-              <Button variant="outline" size="sm" className="flex items-center">
+              <Button variant="outline" size="sm" className="bg-zinc-800 flex items-center">
                 Department <ChevronDown className="ml-1 h-4 w-4" />
               </Button>
-              <Button variant="outline" size="sm" className="flex items-center">
+              <Button variant="outline" size="sm" className="bg-zinc-800 flex items-center">
                 Research Area <ChevronDown className="ml-1 h-4 w-4" />
               </Button>
             </div>
@@ -442,7 +450,7 @@ return (
           </div>
         </div>
       </section>
-    </div>
+  </main>
   )
 }
 
