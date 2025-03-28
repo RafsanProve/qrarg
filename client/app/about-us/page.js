@@ -10,7 +10,7 @@ import Story from "../components/about-us/Story"
 import CoreValues from "../components/about-us/Core-Values"
 import Timeline from "../components/about-us/Timeline"
 import Leadership from "../components/about-us/Leadership"
-import Partners from "../components/about-us/Partners"
+// import Partners from "../components/about-us/Partners"
 
 import {Roboto_Condensed} from "next/font/google";
 
@@ -34,7 +34,7 @@ return (
             <CoreValues />
             <Timeline />
             <Leadership />
-            <Partners />
+            {/* <Partners /> */}
             <Footer />
         {/* </div> */}
     </main>

@@ -1,4 +1,6 @@
 import localFont from "next/font/local";
+import {Roboto_Condensed} from "next/font/google";
+
 import "./globals.css";
 
 const geistSans = localFont({
@@ -11,6 +13,12 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
+const roboto = Roboto_Condensed({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+}); 
 
 export const metadata = {
   title: "QRARG - Quantum Robotics & Automation Research Group",

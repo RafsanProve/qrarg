@@ -1,10 +1,10 @@
 import Image from 'next/image'
 export default function Story() {
 return (
-    <section className="py-16 bg-white">
+    <section className="py-20 bg-white">
     <div className="container mx-auto px-8">
         <div className="flex flex-col md:flex-row gap-12 items-center">
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 pl-12">
                 <h2 className="text-zinc-800 text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Our Story</h2>
                 <div className="w-20 h-1 bg-primary mb-6"></div>
                 <p className="text-slate-700 mb-4">

@@ -5,7 +5,7 @@ export default function Hero({title, description}) {
         <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
       </div>
       <div className="container relative z-10 mx-auto px-4">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl pl-16">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{title}</h1>
           <p className="text-xl text-slate-300 mb-6">
             {description}
