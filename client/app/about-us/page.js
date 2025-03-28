@@ -26,7 +26,10 @@ return (
     <main className={roboto.className}>
         {/* <div className="flex flex-col min-h-screen w-full"> */}
             <Navbar />
-            <Hero />
+            <Hero 
+            title="About Us"
+            description= "Pioneering the future through quantum innovation and collaborative research excellence."
+            />
             <Story />
             <CoreValues />
             <Timeline />

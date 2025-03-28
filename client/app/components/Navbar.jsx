@@ -60,13 +60,13 @@ export default function Navbar() {
             Products
             {isActive('/products') && underline}
           </Link>
-          <Link href="/Publications" className={`${link_style_desktop} ${isActive('/Publications') ? 'font-bold' : ''}`}>
+          <Link href="/publications" className={`${link_style_desktop} ${isActive('/Publications') ? 'font-bold' : ''}`}>
             Publications
-            {isActive('/Publications') && underline}
+            {isActive('/publications') && underline}
           </Link>
-          <Link href="/Members" className={`${link_style_desktop} ${isActive('/Members') ? 'font-bold' : ''}`}>
+          <Link href="/members" className={`${link_style_desktop} ${isActive('/Members') ? 'font-bold' : ''}`}>
             Members
-            {isActive('/Members') && underline}
+            {isActive('/members') && underline}
           </Link>
           <Link href="/about-us" className={`${link_style_desktop} ${isActive('/about-us') ? 'font-bold' : ''}`}>
             About us
