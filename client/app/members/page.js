@@ -21,6 +21,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs"
 
 import Hero from "../components/about-us/Hero"
 import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
+import SearchFilter from "../components/members/SearchFilter"
 
 import {Roboto_Condensed} from "next/font/google";
 
@@ -249,13 +251,16 @@ export default function MembersPage() {
 return (
   <main className={roboto.className}>
     <Navbar />
+    <div className="bg-zinc-800 w-full h-16"></div>
       <Hero 
       title = "Our Team"
       description = "Meet the researchers, scientists, and staff behind our groundbreaking work in quantum robotics."
+      tags={1}
       />
 
       {/* Search and Filter Section */}
-      <section className="py-8 bg-white border-b">
+      {/* <SearchFilter /> */}
+      {/* <section className="py-8 bg-white border-b">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row gap-4 items-center">
             <div className="relative w-full md:w-96">
@@ -272,7 +277,7 @@ return (
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Team Members Content */}
       <section className="py-12 bg-slate-50 flex-1">

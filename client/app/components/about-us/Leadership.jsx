@@ -24,7 +24,7 @@ const experts = [
 ]
 export default function Leadership() {
 return (
-    <section className="py-20 bg-white text-zinc-800 p-4 flex flex-col items-center justify-center h-full w-full mx-auto text-center sm:mx-8 md:mx-auto">
+    <section className="py-20 bg-white text-zinc-800 p-4 flex flex-col items-center justify-center h-full w-full mx-auto text-center md:mx-auto">
         <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto flex flex-col items-center mb-12">
             <h2 className="text-zinc-800 text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Our Experts</h2>

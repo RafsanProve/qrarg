@@ -30,7 +30,7 @@ const moto = [
 ]
 export default function CoreValue() {
   return (
-    <section className="bg-white text-zinc-800 p-4 flex flex-col items-center justify-center h-full w-full mx-auto text-center py-20 sm:mx-8 md:mx-auto">
+    <section className="bg-white text-zinc-800 p-4 flex flex-col items-center justify-center h-full w-full mx-auto text-center py-20 md:mx-auto">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto flex flex-col items-center mb-12">
             <h2 className="text-zinc-800 text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Our Core Values</h2>            

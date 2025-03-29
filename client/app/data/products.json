@@ -3,16 +3,48 @@
         "id": 1,
         "name": "Search Algorithm Visualization",
         "description": "This is a web-based application that visualizes the search algorithms. The application is developed using ReactJS",
-        "link": "https://opsimdaz.qrarg.com/",
-        "research_paper": "",
-        "imageUrl": "/images/SearchAlgorithm.png"
+        "image": "/images/SearchAlgorithm.png",
+        "features": [
+            "Provides interactive visualizations for search algorithms like BFS, DFS, Dijkstra, and A*.",
+            "Users can create customizable grids with adjustable parameters such as diagonal movement and weights.",
+            "Displays performance statistics like execution time, memory usage, and visited nodes.",
+            "A built-in user manual explains the algorithms and how to use the tool."
+        ],
+        "applications": ["Programming", "Algorithm Simulation", "Iteration Visualization", "Optimal Path Finding"],
+        "status": "Active",
+        "featured": true,
+        "link": "https://opsimdaz.qrarg.com/"
     },
     {
         "id": 2,
         "name": "Artificial Kinetic Intelligence system",
         "description": "Welcome to the Artificial Kinetic Intelligence system, where advanced data analysis and intelligent decision-making meet. Explore insights, power your projects, and achieve remarkable outcomes with our AI-driven tools.",
-        "link": "https://aki.qrarg.com/",
-        "research_paper": "",
-        "imageUrl": "/images/AKI.png"
+        "image": "/images/AKI.png",
+        "features": [
+            "It is built using Streamlit, a Python framework for data applications.",
+            "The site requires JavaScript to be enabled to function properly.",
+            "It appears to host an interactive application, but its exact purpose is unclear.",
+            "Without JavaScript, the application remains inaccessible."
+        ],
+        "applications": ["Artificial Intelligence", "Machine Learning", "Deep Learning", "Data Visualization", "Pattern Recognition"],
+        "status": "Active",
+        "featured": true,
+        "link": "https://aki.qrarg.com/"
+    },
+    {
+        "id": 3,
+        "name": "QuantumSense™",
+        "category": "Quantum Sensing",
+        "description": "Ultra-sensitive quantum sensor array for high-precision measurements in noisy environments.",
+        "image": "/placeholder.svg?height=400&width=600",
+        "features": [
+            "10x higher sensitivity than conventional sensors",
+            "Quantum noise reduction technology",
+            "Compact form factor for integration into existing systems",
+            "Compatible with standard data acquisition interfaces"
+        ],
+        "applications": ["Precision manufacturing", "Medical diagnostics", "Environmental monitoring", "Scientific research"],
+        "status": "Available",
+        "featured": true
     }
 ]
