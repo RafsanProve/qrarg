@@ -21,6 +21,7 @@ export default function Navbar() {
       <div className="flex justify-between items-center px-4">
         <div className="flex items-center py-2">
           <Image src="/images/logo.png" alt="logo" width={50} height={50} />
+          <span className="font-serif italic text-xl md:text-2xl sm:inline-block px-2">QRARG</span>
         </div>
 
         {/* Hamburger Menu Button */}

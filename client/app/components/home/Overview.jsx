@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Overview() {
   return (
-    <div className="bg-white text-zinc-800 rounded-3xl p-4 shadow-2xl flex flex-col items-center justify-center h-full max-w-5xl mx-auto text-center pb-10 mt-20 sm:mx-8 md:mx-auto">
+    <div className="bg-white text-zinc-800 p-4 shadow-2xl flex flex-col items-center justify-center h-full w-full mx-auto text-center py-10 sm:mx-8 md:mx-auto">
       <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 mt-4">Overview</h1>
       <div>
         <Image 

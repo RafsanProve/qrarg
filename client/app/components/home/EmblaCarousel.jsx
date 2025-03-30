@@ -54,7 +54,7 @@ export default function EmblaCarousel() {
                                 <p className="text-xl md:text-2xl lg:text-4xl font-light mb-6 md:mb-7 lg:mb-8">
                                 The Dynamic Research Group Towards The Excellence
                                 </p>
-                                <Link href="#" className="border-solid border-2 border-TEXT transition duration-700 ease-in-out hover:backdrop-blur-md hover:scale-105 text-TEXT font-bold text-lg md:text-xl w-40 md:w-44 lg:w-48 h-14 md:h-16 flex items-center justify-center mt-4">
+                                <Link href="/about-us" className="border-solid border-2 border-TEXT transition duration-700 ease-in-out hover:backdrop-blur-md hover:scale-105 text-TEXT font-bold text-lg md:text-xl w-40 md:w-44 lg:w-48 h-14 md:h-16 flex items-center justify-center mt-4">
                                 Learn More
                                 </Link>
                             </div>
