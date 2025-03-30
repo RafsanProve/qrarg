@@ -2,6 +2,7 @@
     {
         "id": 1,
         "name": "Search Algorithm Visualization",
+        "category": "Web Application",
         "description": "This is a web-based application that visualizes the search algorithms. The application is developed using ReactJS",
         "image": "/images/SearchAlgorithm.png",
         "features": [
@@ -17,7 +18,8 @@
     },
     {
         "id": 2,
-        "name": "Artificial Kinetic Intelligence system",
+        "name": "Artificial Kinetic Intelligence system (AKI)",
+        "category": "Web Application",
         "description": "Welcome to the Artificial Kinetic Intelligence system, where advanced data analysis and intelligent decision-making meet. Explore insights, power your projects, and achieve remarkable outcomes with our AI-driven tools.",
         "image": "/images/AKI.png",
         "features": [
@@ -33,18 +35,17 @@
     },
     {
         "id": 3,
-        "name": "QuantumSense™",
-        "category": "Quantum Sensing",
-        "description": "Ultra-sensitive quantum sensor array for high-precision measurements in noisy environments.",
-        "image": "/placeholder.svg?height=400&width=600",
+        "name": "Rock-Paper-Scissor, an intelligent zero-sum gaming system for Education and Entertainment.",
+        "category": "Robotics",
+        "description": "A custom robotic hand, powered by five servo motors, replicates gestures detected by a computer. The system integrates a TensorFlow Lite (TFLite) model with a Mediapipe-based hand recognition framework and a Random Forest classifier. Designed for real-time use on a Raspberry Pi, the TFLite model analyzes webcam input to detect a thumbs-up gesture, initiating a countdown. Once completed, the user’s gesture is captured and classified, leveraging 3D hand landmarks extracted by Mediapipe and categorized using the Random Forest classifier.",
+        "image": "/images/rock.png",
         "features": [
-            "10x higher sensitivity than conventional sensors",
-            "Quantum noise reduction technology",
-            "Compact form factor for integration into existing systems",
-            "Compatible with standard data acquisition interfaces"
+            "Real-time gesture detection and quick response, utilizing a Raspberry Pi for efficient processing",
+            "User-friendly interface for easy interaction with a compact design for integration into existing systems"
         ],
-        "applications": ["Precision manufacturing", "Medical diagnostics", "Environmental monitoring", "Scientific research"],
+        "applications": ["Robotics", "Automation", "Heptic Feedback", "Gesture Recognition", "Gesture Control"],
         "status": "Available",
-        "featured": true
+        "featured": true,
+        "link": "https://www.linkedin.com/posts/quantum-robotics-automation-research-group_rock-paper-scissor-ai-integrated-interactive-activity-7267848503966461952-ZZcm?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFB9IxYBrHliDdmp4_XSySRpN4xapbLRURs"
     }
 ]

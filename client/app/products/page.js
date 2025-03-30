@@ -6,6 +6,7 @@ import ProductCard from "../components/products/ProductCard";
 import Hero from "../components/about-us/Hero";
 import Overview from "../components/products/Overview";
 import InfoSection from "../components/products/InfoSection";
+import ProductSection from "../components/products/ProductSection";
 import data from "../data/products.json";
 import React, { useState } from "react";
 
@@ -29,11 +30,8 @@ export default function ProductPage() {
             />
             <Overview />
             {/* <InfoSection /> */}
-            <div className="flex flex-col md:flex-row mx-4 md:mx-8">
-                {/* Main content area */}
+            {/* <div className="flex flex-col md:flex-row mx-4 md:mx-8">
                 <div className="w-full md:mx-auto md:flex-1">
-                    
-                    {/* Prodcut cards grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
                     {data.map((product, index) => (
                         <div 
@@ -50,7 +48,9 @@ export default function ProductPage() {
                     ))}
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <ProductSection />
+            
             <Footer />
         </main>
     );
