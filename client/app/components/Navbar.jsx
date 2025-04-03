@@ -19,10 +19,10 @@ export default function Navbar() {
   return (
     <nav className="z-20 fixed bg-zinc-800 w-full text-TEXT">
       <div className="flex justify-between items-center px-4">
-        <div className="flex items-center py-2">
+        <Link href={"/"} className="flex items-center py-2">
           <Image src="/images/logo.png" alt="logo" width={50} height={50} />
           <span className="font-serif italic text-xl md:text-2xl sm:inline-block px-2">QRARG</span>
-        </div>
+        </Link>
 
         {/* Hamburger Menu Button */}
         <button 
@@ -61,11 +61,11 @@ export default function Navbar() {
             Products
             {isActive('/products') && underline}
           </Link>
-          <Link href="/publications" className={`${link_style_desktop} ${isActive('/Publications') ? 'font-bold' : ''}`}>
+          <Link href="/publications" className={`${link_style_desktop} ${isActive('/publications') ? 'font-bold' : ''}`}>
             Publications
             {isActive('/publications') && underline}
           </Link>
-          <Link href="/members" className={`${link_style_desktop} ${isActive('/Members') ? 'font-bold' : ''}`}>
+          <Link href="/members" className={`${link_style_desktop} ${isActive('/members') ? 'font-bold' : ''}`}>
             Members
             {isActive('/members') && underline}
           </Link>
@@ -99,13 +99,13 @@ export default function Navbar() {
             Products
             {isActive('/products') && underline}
           </Link>
-          <Link href="/Publications" className={`${link_style_mobile} ${isActive('/Publications') ? 'font-bold' : ''}`}>
+          <Link href="/publications" className={`${link_style_mobile} ${isActive('/publications') ? 'font-bold' : ''}`}>
             Publications
-            {isActive('/Publications') && underline}
+            {isActive('/publications') && underline}
           </Link>
-          <Link href="/Members" className={`${link_style_mobile} ${isActive('/Members') ? 'font-bold' : ''}`}>
+          <Link href="/members" className={`${link_style_mobile} ${isActive('/members') ? 'font-bold' : ''}`}>
             Members
-            {isActive('/Members') && underline}
+            {isActive('/members') && underline}
           </Link>
           <Link href="/about-us" className={`${link_style_mobile} ${isActive('/about-us') ? 'font-bold' : ''}`}>
             About us

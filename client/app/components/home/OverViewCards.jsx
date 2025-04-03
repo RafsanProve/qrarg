@@ -5,7 +5,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "../ui/card
 export default function OverviewCards() {
 return (
     <section className="bg-white grid grid-cols-1 md:grid-cols-3 gap-8 py-8 mx-auto px-4 sm:px-6 lg:px-20">
-        <Card className="bg-white shadow-md hover:shadow-lg transition-shadow">
+        <Card className="bg-gray-100 shadow-md hover:shadow-lg transition-shadow">
             <CardHeader className="pb-2">
                 <div className="w-12 h-12 rounded-full bg-zinc-800/20 flex items-center justify-center mb-4">
                 <Microscope className="h-6 w-6 text-primary" />
@@ -27,7 +27,7 @@ return (
             </CardFooter>
         </Card>
 
-        <Card className="bg-white shadow-md hover:shadow-lg transition-shadow">
+        <Card className="bg-gray-100 shadow-md hover:shadow-lg transition-shadow">
             <CardHeader className="pb-2">
                 <div className="w-12 h-12 rounded-full bg-zinc-800/20 flex items-center justify-center mb-4">
                 <Rocket className="h-6 w-6 text-primary" />
@@ -49,7 +49,7 @@ return (
             </CardFooter>
         </Card>
 
-        <Card className="bg-white shadow-md hover:shadow-lg transition-shadow">
+        <Card className="bg-gray-100 shadow-md hover:shadow-lg transition-shadow">
             <CardHeader className="pb-2">
                 <div className="w-12 h-12 rounded-full bg-zinc-800/20 flex items-center justify-center mb-4">
                 <Users className="h-6 w-6 text-primary" />

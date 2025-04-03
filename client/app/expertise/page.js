@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Hero from "../components/about-us/Hero";
 import MeetTheExperts from "../components/expertise/MeetTheExperts";
 import ExpertCardLeft from "../components/expertise/ExpertCardLeft";
 import ExpertCardRight from "../components/expertise/ExpertCardRight";
@@ -16,6 +17,10 @@ export default function ExpertisePage() {
     <main className={roboto.className}>
     <Navbar />
     <div className="bg-zinc-800 w-full h-16"></div>
+    <Hero
+    title={"Meet the Experts"}
+    description={"Meet the experts who are driving innovation in the field of robotics and mechatronics."}
+    />
     <MeetTheExperts />
     <ExpertCardLeft
     name={"Dr. Md Akhtaruzzaman"}
@@ -106,6 +111,7 @@ export default function ExpertisePage() {
     googleScholar={"https://scholar.google.com/citations?hl=en&user=c8su2vYAAAAJ&view_op=list_works&sortby=pubdate"}
     phone={"+8801737942409"}
     />
+    <div className="bg-transparent w-full h-20"></div>
     <Footer />
     </main>
   );

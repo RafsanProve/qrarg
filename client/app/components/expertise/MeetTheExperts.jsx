@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function MeetTheExperts() {
   return (
     <div className="flex flex-col justify-center items-center bg-white shadow-2xl mx-4 sm:mx-8 md:mx-auto mt-12 sm:mt-16 md:mt-20 p-3 sm:p-4 pb-8 sm:pb-10 rounded-3xl max-w-6xl h-full text-center text-zinc-800">
-      <h1 className="mt-3 sm:mt-4 mb-3 sm:mb-4 font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl">Meet the Experts</h1>
+      <h1 className="mt-3 sm:mt-4 mb-3 sm:mb-4 font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl">Our Experts</h1>
       <div>
         <Image 
             src="/svgs/Underlines.svg" 
