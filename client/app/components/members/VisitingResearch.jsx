@@ -1,4 +1,4 @@
-import { Button } from "../components/ui/button"
+import { Button } from "../../components/ui/button"
 export default function VisitingResearch() {
   return (
     // {/* Visiting Researchers Section */}

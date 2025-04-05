@@ -1,0 +1,217 @@
+[
+    {
+      "id": 1,
+      "name": "Dr. Sarah Chen",
+      "role": "Founder & Director",
+      "bio": "Dr. Chen is a quantum physicist with over 20 years of experience in quantum computing and robotics integration. She founded QRARG in 2015 after a distinguished career at MIT and CERN.",
+      "image": "/placeholder.svg?height=400&width=400",
+      "department": "leadership",
+      "education": "Ph.D. in Quantum Physics, MIT",
+      "researchInterests": ["Quantum-classical interfaces", "Robotic control systems", "Quantum error correction"],
+      "publications": 45,
+      "email": "sarah.chen@qrarg.org",
+      "location": "Main Campus, Building A",
+      "socialLinks": {
+        "linkedin": "#",
+        "github": "#"
+      }
+    },
+
+    {
+      "id": 2,
+      "name": "Dr. Michael Rodriguez",
+      "role": "Chief Research Officer",
+      "bio": "Dr. Rodriguez specializes in quantum algorithms and their applications in robotic control systems. He leads the research strategy and oversees all scientific initiatives at QRARG.",
+      "image": "/placeholder.svg?height=400&width=400",
+      "department": "leadership",
+      "education": "Ph.D. in Computer Science, Stanford University",
+      "researchInterests": ["Quantum algorithms", "Robotic control", "Computational complexity"],
+      "publications": 38,
+      "email": "michael.rodriguez@qrarg.org",
+      "location": "Main Campus, Building A",
+      "socialLinks": {
+        "linkedin": "#",
+        "github": "#"
+      }
+    },
+
+    {
+      "id": 3,
+      "name": "Dr. Aisha Patel",
+      "role": "Head of Robotics",
+      "bio": "Dr. Patel is an expert in autonomous robotic systems and human-robot interaction paradigms. She leads the robotics division and oversees the development of next-generation robotic platforms.",
+      "image": "/placeholder.svg?height=400&width=400",
+      "department": "leadership",
+      "education": "Ph.D. in Robotics, Carnegie Mellon University",
+      "researchInterests": ["Autonomous systems", "Human-robot interaction", "Robotic perception"],
+      "publications": 32,
+      "email": "aisha.patel@qrarg.org",
+      "location": "Robotics Lab, Building B",
+      "socialLinks": {
+        "linkedin": "#",
+        "github": "#"
+      }
+    },
+
+    {
+      "id": 4,
+      "name": "Prof. James Wilson",
+      "role": "Chief Scientist",
+      "bio": "Prof. Wilson is a leading researcher in quantum materials and their applications in sensing and computing. He oversees the scientific direction of QRARG's research programs.",
+      "image": "/placeholder.svg?height=400&width=400",
+      "department": "senior_researchers",
+      "education": "Ph.D. in Materials Science, Caltech",
+      "researchInterests": ["Quantum materials", "Quantum sensing", "Superconducting qubits"],
+      "publications": 65,
+      "email": "james.wilson@qrarg.org",
+      "location": "Quantum Materials Lab, Building C",
+      "socialLinks": {
+        "linkedin": "#",
+        "github": "#"
+      }
+    },
+
+    {
+      "id": 5,
+      "name": "Dr. Elena Kuznetsova",
+      "role": "Head of AI & Automation",
+      "bio": "Dr. Kuznetsova leads pioneering work in machine learning algorithms for quantum-enhanced systems. She directs the AI and automation research group at QRARG.",
+      "image": "/placeholder.svg?height=400&width=400",
+      "department": "senior_researchers",
+      "education": "Ph.D. in Artificial Intelligence, ETH Zurich",
+      "researchInterests": ["Quantum machine learning", "Automated decision systems", "Neural networks"],
+      "publications": 29,
+      "email": "elena.kuznetsova@qrarg.org",
+      "location": "AI Lab, Building D",
+      "socialLinks": {
+        "linkedin": "#",
+        "github": "#"
+      }
+    },
+
+    {
+      "id": 6,
+      "name": "Dr. David Okonkwo",
+      "role": "Director of Partnerships",
+      "bio": "Dr. Okonkwo facilitates collaborations between QRARG and industry/academic partners worldwide. He also conducts research on quantum networking and distributed quantum systems.",
+      "image": "/placeholder.svg?height=400&width=400",
+      "department": "senior_researchers",
+      "education": "Ph.D. in Physics, University of Tokyo",
+      "researchInterests": ["Quantum networks", "Distributed quantum computing", "Industry applications"],
+      "publications": 27,
+      "email": "david.okonkwo@qrarg.org",
+      "location": "Main Campus, Building A",
+      "socialLinks": {
+        "linkedin": "#",
+        "github": "#"
+      }
+    },
+
+    {
+      "id": 7,
+      "name": "Dr. Maya Hernandez",
+      "role": "Research Scientist",
+      "bio": "Dr. Hernandez specializes in quantum error correction and fault-tolerant quantum computing with applications to robotic systems operating in noisy environments.",
+      "image": "/placeholder.svg?height=400&width=400",
+      "department": "research_scientists",
+      "education": "Ph.D. in Quantum Information, University of Waterloo",
+      "researchInterests": ["Quantum error correction", "Fault-tolerant computing", "Noise mitigation"],
+      "publications": 18,
+      "email": "maya.hernandez@qrarg.org",
+      "location": "Quantum Computing Lab, Building C",
+      "socialLinks": {
+        "linkedin": "#",
+        "github": "#"
+      }
+    },
+
+    {
+      "id": 8,
+      "name": "Dr. Hiroshi Tanaka",
+      "role": "Research Scientist",
+      "bio": "Dr. Tanaka works on quantum sensing technologies for robotic perception, developing novel approaches to enhance the sensitivity and resolution of robotic sensor systems.",
+      "image": "/placeholder.svg?height=400&width=400",
+      "department": "research_scientists",
+      "education": "Ph.D. in Applied Physics, University of Tokyo",
+      "researchInterests": ["Quantum sensing", "Robotic perception", "Sensor fusion"],
+      "publications": 22,
+      "email": "hiroshi.tanaka@qrarg.org",
+      "location": "Sensing Lab, Building B",
+      "socialLinks": {
+        "linkedin": "#",
+        "github": "#"
+      }
+    },
+
+    {
+      "id": 9,
+      "name": "Dr. Sophia Nkosi",
+      "role": "Research Scientist",
+      "bio": "Dr. Nkosi researches quantum machine learning algorithms for robotic decision-making, focusing on reinforcement learning approaches enhanced by quantum computing.",
+      "image": "/placeholder.svg?height=400&width=400",
+      "department": "research_scientists",
+      "education": "Ph.D. in Computer Science, University of Cape Town",
+      "researchInterests": ["Quantum machine learning", "Reinforcement learning", "Decision systems"],
+      "publications": 15,
+      "email": "sophia.nkosi@qrarg.org",
+      "location": "AI Lab, Building D",
+      "socialLinks": {
+        "linkedin": "#",
+        "github": "#"
+      }
+    },
+
+    {
+      "id": 10,
+      "name": "Dr. Raj Patel",
+      "role": "Research Scientist",
+      "bio": "Dr. Patel focuses on quantum-classical interfaces for robotic systems, developing hardware and software solutions to bridge quantum processors with classical robotic controllers.",
+      "image": "/placeholder.svg?height=400&width=400",
+      "department": "research_scientists",
+      "education": "Ph.D. in Electrical Engineering, UC Berkeley",
+      "researchInterests": ["Quantum-classical interfaces", "Hardware design", "System integration"],
+      "publications": 19,
+      "email": "raj.patel@qrarg.org",
+      "location": "Integration Lab, Building B",
+      "socialLinks": {
+        "linkedin": "#",
+        "github": "#"
+      }
+    },
+
+    {
+      "id": 11,
+      "name": "Dr. Emma Johnson",
+      "role": "Postdoctoral Researcher",
+      "bio": "Dr. Johnson investigates quantum algorithms for robotic path planning and optimization, with a focus on applications in complex and dynamic environments.",
+      "image": "/placeholder.svg?height=400&width=400",
+      "department": "postdocs",
+      "education": "Ph.D. in Computer Science, University of Oxford",
+      "researchInterests": ["Path planning", "Quantum optimization", "Dynamic environments"],
+      "publications": 8,
+      "email": "emma.johnson@qrarg.org",
+      "location": "Algorithms Lab, Building D",
+      "socialLinks": {
+        "linkedin": "#",
+        "github": "#"
+      }
+    },
+
+    {
+      "id": 12,
+      "name": "Dr. Carlos Mendoza",
+      "role": "Postdoctoral Researcher",
+      "bio": "Dr. Mendoza works on quantum simulation for materials discovery, focusing on identifying novel materials with properties optimized for robotic applications.",
+      "image": "/placeholder.svg?height=400&width=400",
+      "department": "postdocs",
+      "education": "Ph.D. in Materials Science, Universidad Nacional Autónoma de México",
+      "researchInterests": ["Quantum simulation", "Materials discovery", "Computational design"],
+      "publications": 6,
+      "email": "carlos.mendoza@qrarg.org",
+      "location": "Materials Lab, Building C",
+      "socialLinks": {
+        "linkedin": "#",
+        "github": "#"
+      }
+    }
+  ]
