@@ -24,10 +24,9 @@ const VisionMission = () => {
         <Vision />
         
         {/* Vision & Mission Section */}
-        <div className="bg-white p-6 md:p-12 text-zinc-800 w-full mx-auto sm:mx-8 md:mx-auto py-20">
+        {/* <div className="bg-white p-6 md:p-12 text-zinc-800 w-full mx-auto sm:mx-8 md:mx-auto py-20">
           <div className="mb-10">
               <h1 className="text-3xl md:text-4xl text-zinc-800 font-bold text-center mb-4">Mission & Vision</h1>
-              {/* <div className="w-32 h-1 bg-zinc-800 mx-auto mb-10"></div> */}
               <div className="flex justify-center">
                   <Image 
                       src="/svgs/Underlines.svg" 
@@ -59,7 +58,7 @@ const VisionMission = () => {
               Join us in shaping the next era of scientific excellence!
               </p>
           </div>
-        </div>
+        </div> */}
         
       <div className="bg-white w-full h-20"></div>
       <Footer />

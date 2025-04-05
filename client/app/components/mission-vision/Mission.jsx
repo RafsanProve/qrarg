@@ -7,7 +7,7 @@ return (
     <section className="py-16 bg-white text-zinc-800">
         <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-            <div>
+            <div className="w-full pl-4 sm:pl-6">
             <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
             <Image 
                 src="/svgs/Underlines.svg" 
@@ -65,14 +65,13 @@ return (
             <div className="relative">
             <div className="aspect-square bg-slate-200 rounded-lg overflow-hidden">
                 <Image
-                src="/placeholder.svg?height=500&width=500"
+                src="/images/cyber_range.jpg"
                 alt="QRARG Mission"
-                width={500}
-                height={500}
-                className="object-cover"
+                fill
+                className="object-cover rounded-lg"
                 />
             </div>
-            <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-zinc-800/20 rounded-lg -z-10"></div>
+            
             </div>
         </div>
         </div>

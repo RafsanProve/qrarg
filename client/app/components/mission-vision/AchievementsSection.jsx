@@ -43,7 +43,7 @@ const AchievementItem = ({ icon, label, value}) => {
 
 export default function AchievementsSection() {
 return (
-    <div className="bg-white text-zinc-800 p-4 flex flex-col items-center justify-center h-full w-full mx-auto text-center sm:mx-8 md:mx-auto py-20">
+    <div className="bg-white text-zinc-800 p-4 flex flex-col items-center justify-center h-full w-full mx-auto text-center py-20">
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl text-zinc-800 font-bold text-center mb-12">Key Achievements</h2>
             <div className="flex justify-center">

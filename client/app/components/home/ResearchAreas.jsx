@@ -52,7 +52,7 @@ return (
                     </li>
                     </ul>
                 </div>
-                <div className="md:w-1/2 bg-slate-100 rounded-lg p-6 flex items-center justify-center">
+                <div className="md:w-1/2 bg-slate-200 rounded-lg p-6 flex items-center justify-center">
                     <Atom className="h-32 w-32 text-primary/80" />
                 </div>
                 </div>
@@ -80,7 +80,7 @@ return (
                     </li>
                     </ul>
                 </div>
-                <div className="md:w-1/2 bg-slate-100 rounded-lg p-6 flex items-center justify-center">
+                <div className="md:w-1/2 bg-slate-200 rounded-lg p-6 flex items-center justify-center">
                     <Cpu className="h-32 w-32 text-primary/80" />
                 </div>
                 </div>
@@ -108,7 +108,7 @@ return (
                     </li>
                     </ul>
                 </div>
-                <div className="md:w-1/2 bg-slate-100 rounded-lg p-6 flex items-center justify-center">
+                <div className="md:w-1/2 bg-slate-200 rounded-lg p-6 flex items-center justify-center">
                     <Brain className="h-32 w-32 text-primary/80" />
                 </div>
                 </div>

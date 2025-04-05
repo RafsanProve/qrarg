@@ -7,7 +7,6 @@ export default function Story() {
         <div className="flex flex-col lg:flex-row gap-8 md:gap-12 items-center">
           <div className="w-full lg:w-1/2 px-4 sm:px-6">
             <h2 className="text-zinc-800 text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Our Story</h2>
-            <div className="w-16 sm:w-20 h-1 bg-primary mb-4 sm:mb-6"></div>
             <p className="text-slate-700 mb-4 text-base sm:text-lg">
               The Quantum Robotics & Automation Research Group (QRARG) was founded in 2015 by a team of visionary
               researchers and engineers who recognized the transformative potential of combining quantum computing

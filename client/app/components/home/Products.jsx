@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Products() {
     return (
-    <section className="bg-white text-zinc-800 p-4 shadow-lg flex flex-col items-center justify-center h-full w-full mx-auto text-center py-10 pb-36 sm:mx-8 md:mx-auto">
+    <section className="bg-white text-zinc-800 p-4 shadow-lg flex flex-col items-center justify-center h-full w-full text-center py-10 pb-36 mx-auto">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 mt-4">Featured Products</h1>
         <div>
         <Image 

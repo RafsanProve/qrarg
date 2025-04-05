@@ -10,16 +10,15 @@ return (
             <div className="order-2 md:order-1 relative">
             <div className="aspect-square bg-slate-200 rounded-lg overflow-hidden">
                 <Image
-                src="/placeholder.svg?height=500&width=500"
+                src="/images/icca.jpg"
                 alt="QRARG Vision"
-                width={500}
-                height={500}
-                className="object-cover"
+                fill
+                className="object-cover rounded-lg"
                 />
             </div>
             <div className="absolute -top-6 -left-6 w-48 h-48 bg-zinc-800/20 rounded-lg -z-10"></div>
             </div>
-            <div className="order-1 md:order-2">
+            <div className="order-1 md:order-2 w-full pr-4 sm:pr-6">
             <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
             <Image 
                 src="/svgs/Underlines.svg" 
@@ -28,7 +27,6 @@ return (
                 width={100} 
                 height={20}
             />
-            <div className="w-20 h-1 bg-primary mb-6"></div>
             <p className="text-xl text-slate-700 mb-6 font-medium italic">
                 &quot;To be the global leader in quantum robotics research, creating a future where quantum-enhanced
                 automation systems transform industries, improve human lives, and help solve humanity&apos;s greatest

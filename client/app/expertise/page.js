@@ -14,7 +14,7 @@ const roboto = Roboto_Condensed({
 
 export default function ExpertisePage() {
   return (
-    <main className={roboto.className}>
+    <main className={`${roboto.className} bg-white`}>
     <Navbar />
     <div className="bg-zinc-800 w-full h-16"></div>
     <Hero
@@ -27,7 +27,7 @@ export default function ExpertisePage() {
     position={"Assist. Professor & Researcher (Robotics & Mechatronics)"}
     imageSrc={"/images/Akhtaruzzaman.jpg"}
     imageAlt={"Dr. Md Akhtaruzzaman"}
-    description={"Dr. Md. Akhtaruzzaman is an Assistant Professor in the Department of Computer Science & Engineering at MIST, specializing in Robotics and Mechatronics. He holds a Ph.D. in Engineering (Mechatronics/Robotics) from IIUM, Malaysia, and has extensive academic and research experience, including serving as a Web Consultant for MIJST and NDC Journals. With prior roles as a Research Assistant in Malaysia and a Software Engineer in Bangladesh, he has contributed significantly to his field, publishing 16 journal articles, 24 conference papers, 2 international book chapters, and 2 books. His achievements include multiple awards such as the Academic Achievement Award (Ph.D.), IIUM Postgraduate Assistantship Scholarship, and Gold Medals at KERIE 2013 and IRIIE 2012. He is an affiliate member of the IEEE Robotics and Automation Society and has actively contributed to various conferences. Dr. Akhtaruzzaman’s expertise and contributions continue to enrich the academic and research landscape at MIST."}
+    description={"Dr. Md. Akhtaruzzaman is an Assistant Professor in the Department of Computer Science & Engineering at MIST, specializing in Robotics and Mechatronics. He holds a Ph.D. in Engineering (Mechatronics/Robotics) from IIUM, Malaysia, and has extensive academic and research experience, including serving as a Web Consultant for MIJST and NDC Journals. With prior roles as a Research Assistant in Malaysia and a Software Engineer in Bangladesh, he has contributed significantly to his field, publishing 16 journal articles, 24 conference papers, 2 international book chapters, and 2 books. His achievements include multiple awards such as the Academic Achievement Award (Ph.D.), IIUM Postgraduate Assistantship Scholarship, and Gold Medals at KERIE 2013 and IRIIE 2012. He is an affiliate member of the IEEE Robotics and Automation Society and has actively contributed to various conferences. Dr. Akhtaruzzaman's expertise and contributions continue to enrich the academic and research landscape at MIST."}
     email={"akhter900@cse.mist.ac.bd"}
     linkedin={"https://www.linkedin.com/in/md-akhtaruzzaman-6b148b55/"}
     // researchgate={"https://www.researchgate.net/profile/Md-Akhtaruzzaman-2"}
