@@ -1,17 +1,12 @@
 import Image from "next/image"
 import Link from "next/link"
 import {
-  ArrowRight,
-  Award,
   BookOpen,
-  ChevronDown,
   ExternalLink,
   Github,
   Linkedin,
   Mail,
   MapPin,
-  Search,
-  Users,
 } from "lucide-react"
 
 import { Button } from "../components/ui/button"
@@ -21,6 +16,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs"
 
 import Hero from "../components/about-us/Hero"
 import Navbar from "../components/Navbar"
+import JoinTeam from "../components/members/JoinTeam"
 import Footer from "../components/Footer"
 import SearchFilter from "../components/members/SearchFilter"
 
@@ -258,203 +254,19 @@ return (
       tags={1}
       />
 
-      {/* Search and Filter Section */}
-      {/* <SearchFilter /> */}
-      {/* <section className="py-8 bg-white border-b">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row gap-4 items-center">
-            <div className="relative w-full md:w-96">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-800" />
-              <Input placeholder="Search team members..." className="pl-10 text-zinc-800 border-gray-600" />
-            </div>
-            <div className="flex flex-wrap gap-2 w-full md:w-auto">
-              <Button variant="outline" size="sm" className="bg-zinc-800 flex items-center">
-                Department <ChevronDown className="ml-1 h-4 w-4" />
-              </Button>
-              <Button variant="outline" size="sm" className="bg-zinc-800 flex items-center">
-                Research Area <ChevronDown className="ml-1 h-4 w-4" />
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* Team Members Content */}
-      <section className="py-12 bg-slate-50 flex-1">
-        <div className="container mx-auto px-4">
-          <Tabs defaultValue="all" className="w-full  text-zinc-800">
-            <TabsList className="mb-8 ">
-              <TabsTrigger value="all">All Members</TabsTrigger>
-              <TabsTrigger value="leadership">Leadership</TabsTrigger>
-              <TabsTrigger value="senior_researchers">Senior Researchers</TabsTrigger>
-              <TabsTrigger value="research_scientists">Research Scientists</TabsTrigger>
-              <TabsTrigger value="postdocs">Postdoctoral Researchers</TabsTrigger>
-            </TabsList>
-
-            <TabsContent value="all">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {teamMembers.map((member) => (
-                  <MemberCard key={member.id} member={member} />
-                ))}
-              </div>
-            </TabsContent>
-
-            <TabsContent value="leadership">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {teamMembers
-                  .filter((m) => m.department === "leadership")
-                  .map((member) => (
-                    <MemberCard key={member.id} member={member} />
-                  ))}
-              </div>
-            </TabsContent>
-
-            <TabsContent value="senior_researchers">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {teamMembers
-                  .filter((m) => m.department === "senior_researchers")
-                  .map((member) => (
-                    <MemberCard key={member.id} member={member} />
-                  ))}
-              </div>
-            </TabsContent>
-
-            <TabsContent value="research_scientists">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {teamMembers
-                  .filter((m) => m.department === "research_scientists")
-                  .map((member) => (
-                    <MemberCard key={member.id} member={member} />
-                  ))}
-              </div>
-            </TabsContent>
-
-            <TabsContent value="postdocs">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {teamMembers
-                  .filter((m) => m.department === "postdocs")
-                  .map((member) => (
-                    <MemberCard key={member.id} member={member} />
-                  ))}
-              </div>
-            </TabsContent>
-          </Tabs>
-
-          <div className="mt-12 text-center">
-            <p className="text-slate-600 mb-4">Showing 12 of 50+ team members</p>
-            <Button>View All Team Members</Button>
-          </div>
+      <section className="p-16 bg-white">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {teamMembers
+            // .filter((m) => m.department === "leadership")
+            .map((member) => (
+              <MemberCard key={member.id} member={member} />
+            ))}
         </div>
       </section>
 
-      {/* Join Our Team Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Join Our Team</h2>
-              <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
-              <p className="text-lg text-slate-700">
-                Were always looking for talented researchers and staff to join our mission of advancing quantum
-                robotics and automation.
-              </p>
-            </div>
+      <JoinTeam />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card className="bg-white shadow-md hover:shadow-lg transition-shadow">
-                <CardContent className="pt-6">
-                  <div className="flex flex-col items-center text-center mb-6">
-                    <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                      <BookOpen className="h-8 w-8 text-primary" />
-                    </div>
-                    <h3 className="text-xl font-bold mb-2">Research Positions</h3>
-                  </div>
-                  <p className="text-slate-700 mb-6">
-                    Join our research team and work on cutting-edge projects in quantum computing, robotics, and
-                    automation. We offer positions for postdoctoral researchers, research scientists, and senior
-                    researchers.
-                  </p>
-                  <ul className="space-y-3 mb-6">
-                    <li className="flex items-start">
-                      <ArrowRight className="h-5 w-5 text-primary shrink-0 mt-0.5 mr-2" />
-                      <span>Access to state-of-the-art facilities and equipment</span>
-                    </li>
-                    <li className="flex items-start">
-                      <ArrowRight className="h-5 w-5 text-primary shrink-0 mt-0.5 mr-2" />
-                      <span>Collaboration with leading experts in the field</span>
-                    </li>
-                    <li className="flex items-start">
-                      <ArrowRight className="h-5 w-5 text-primary shrink-0 mt-0.5 mr-2" />
-                      <span>Opportunities to publish in top journals and conferences</span>
-                    </li>
-                  </ul>
-                  <div className="text-center">
-                    <Button>View Research Openings</Button>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-white shadow-md hover:shadow-lg transition-shadow">
-                <CardContent className="pt-6">
-                  <div className="flex flex-col items-center text-center mb-6">
-                    <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                      <Users className="h-8 w-8 text-primary" />
-                    </div>
-                    <h3 className="text-xl font-bold mb-2">Staff & Support Positions</h3>
-                  </div>
-                  <p className="text-slate-700 mb-6">
-                    Our operations, administrative, and technical staff play a crucial role in supporting our research
-                    mission. Join our team in areas such as lab management, IT, administration, and outreach.
-                  </p>
-                  <ul className="space-y-3 mb-6">
-                    <li className="flex items-start">
-                      <ArrowRight className="h-5 w-5 text-primary shrink-0 mt-0.5 mr-2" />
-                      <span>Competitive compensation and benefits</span>
-                    </li>
-                    <li className="flex items-start">
-                      <ArrowRight className="h-5 w-5 text-primary shrink-0 mt-0.5 mr-2" />
-                      <span>Professional development opportunities</span>
-                    </li>
-                    <li className="flex items-start">
-                      <ArrowRight className="h-5 w-5 text-primary shrink-0 mt-0.5 mr-2" />
-                      <span>Work in a dynamic, innovative environment</span>
-                    </li>
-                  </ul>
-                  <div className="text-center">
-                    <Button>View Staff Openings</Button>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="mt-12 text-center">
-              <p className="text-slate-700 mb-4">
-                Dont see a position that matches your skills? Were always interested in hearing from talented
-                individuals.
-              </p>
-              <Button variant="outline">Submit General Application</Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Visiting Researchers Section */}
-      <section className="py-16 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">Visiting Researchers Program</h2>
-            <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
-            <p className="text-lg text-slate-700 mb-8">
-              We welcome visiting researchers from academic institutions and industry partners to collaborate with our
-              team on short-term projects and knowledge exchange.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button>Learn About the Program</Button>
-              <Button variant="outline">Apply as a Visiting Researcher</Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      
   </main>
   )
 }
