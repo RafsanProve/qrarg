@@ -4,6 +4,8 @@ import PublicationCard from "../components/publications/PublicationCard"
 import Guide from "../components/publications/Guide"
 import Footer from "../components/Footer"
 
+import publications from "../data/publications.json"
+
 import {Roboto_Condensed} from "next/font/google";
 
 const roboto = Roboto_Condensed({
@@ -13,135 +15,6 @@ const roboto = Roboto_Condensed({
 });
 
 export default function PublicationsPage() {
-  // Sample publications data
-  const publications = [
-    {
-      id: 1,
-      title: "Quantum-Enhanced Robotic Control Systems for Precision Manufacturing",
-      authors: ["Sarah Chen", "Michael Rodriguez", "James Wilson"],
-      journal: "Journal of Quantum Robotics",
-      year: 2023,
-      volume: "12",
-      issue: "3",
-      pages: "145-162",
-      doi: "10.1234/jqr.2023.12345",
-      abstract:
-        "This paper presents a novel approach to integrating quantum computing principles with robotic control systems, demonstrating significant improvements in efficiency and precision for manufacturing applications.",
-      keywords: ["quantum computing", "robotics", "control systems", "manufacturing"],
-      category: "journal",
-      featured: true,
-    },
-    {
-      id: 2,
-      title: "Real-time Quantum Algorithm for Robotic Path Planning with Exponential Speedup",
-      authors: ["Elena Kuznetsova", "Aisha Patel", "David Okonkwo"],
-      journal: "IEEE Transactions on Quantum Engineering",
-      year: 2022,
-      volume: "8",
-      issue: "2",
-      pages: "78-95",
-      doi: "10.1109/tqe.2022.54321",
-      abstract:
-        "We develop a novel quantum algorithm for real-time robotic path planning that demonstrates exponential speedup compared to classical approaches, enabling more responsive and adaptive robotic systems.",
-      keywords: ["quantum algorithms", "path planning", "robotics", "optimization"],
-      category: "journal",
-      featured: true,
-    },
-    {
-      id: 3,
-      title: "Quantum-Classical Interface for Hybrid Robotic Systems",
-      authors: ["James Wilson", "Sarah Chen", "Michael Rodriguez"],
-      conference: "International Conference on Quantum Technologies (ICQT)",
-      year: 2023,
-      location: "Zurich, Switzerland",
-      pages: "234-241",
-      doi: "10.1145/icqt.2023.67890",
-      abstract:
-        "This paper explores the design and implementation of interfaces between quantum processors and classical robotic systems, addressing challenges in data conversion, timing, and error handling.",
-      keywords: ["quantum-classical interface", "hybrid systems", "robotics"],
-      category: "conference",
-      featured: false,
-    },
-    {
-      id: 4,
-      title: "Entanglement-Based Sensing for Robotic Perception",
-      authors: ["Aisha Patel", "Elena Kuznetsova"],
-      journal: "Nature Quantum Information",
-      year: 2022,
-      volume: "4",
-      issue: "6",
-      pages: "112-125",
-      doi: "10.1038/nqi.2022.98765",
-      abstract:
-        "We demonstrate how quantum entanglement can be leveraged to enhance sensing capabilities in robotic perception systems, achieving super-resolution and improved noise immunity.",
-      keywords: ["quantum sensing", "entanglement", "perception", "robotics"],
-      category: "journal",
-      featured: true,
-    },
-    {
-      id: 5,
-      title: "Quantum Machine Learning for Robotic Decision Making",
-      authors: ["Elena Kuznetsova", "David Okonkwo", "Michael Rodriguez"],
-      conference: "Conference on Robot Learning (CoRL)",
-      year: 2022,
-      location: "Auckland, New Zealand",
-      pages: "345-352",
-      doi: "10.1007/corl.2022.12345",
-      abstract:
-        "This paper presents a framework for implementing quantum machine learning algorithms in robotic decision-making processes, showing improvements in learning efficiency and decision quality.",
-      keywords: ["quantum machine learning", "decision making", "robotics", "artificial intelligence"],
-      category: "conference",
-      featured: false,
-    },
-    {
-      id: 6,
-      title: "Quantum Error Correction in Robotic Control Systems",
-      authors: ["Michael Rodriguez", "Sarah Chen"],
-      journal: "Quantum Engineering",
-      year: 2021,
-      volume: "3",
-      issue: "4",
-      pages: "201-215",
-      doi: "10.1002/qe.2021.54321",
-      abstract:
-        "We address the challenge of quantum error correction in the context of robotic control systems, developing techniques to maintain quantum coherence in noisy environments.",
-      keywords: ["quantum error correction", "robotics", "control systems", "noise reduction"],
-      category: "journal",
-      featured: false,
-    },
-    {
-      id: 7,
-      title: "Collaborative Quantum-Enhanced Robotics for Manufacturing",
-      authors: ["David Okonkwo", "Aisha Patel", "James Wilson"],
-      conference: "International Conference on Robotics and Automation (ICRA)",
-      year: 2021,
-      location: "Xi'an, China",
-      pages: "1876-1883",
-      doi: "10.1109/icra.2021.87654",
-      abstract:
-        "This paper explores how quantum-enhanced robotics can enable more effective collaboration between multiple robots and human workers in manufacturing environments.",
-      keywords: ["collaborative robotics", "quantum enhancement", "manufacturing", "human-robot interaction"],
-      category: "conference",
-      featured: false,
-    },
-    {
-      id: 8,
-      title: "Quantum Simulation for Materials Discovery in Robotic Applications",
-      authors: ["James Wilson", "Elena Kuznetsova"],
-      journal: "Advanced Quantum Materials",
-      year: 2021,
-      volume: "2",
-      issue: "1",
-      pages: "45-58",
-      doi: "10.1002/aqm.2021.12345",
-      abstract:
-        "We demonstrate the use of quantum simulation techniques to discover and design new materials with properties optimized for specific robotic applications.",
-      keywords: ["quantum simulation", "materials discovery", "robotics", "optimization"],
-      category: "journal",
-      featured: false,
-    },
-  ]
-
   return (
     <div className={`${roboto.className} flex flex-col min-h-screen`}>
         <Navbar />
