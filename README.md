@@ -20,7 +20,7 @@ Make sure you have the following installed:
 
 ```bash
 git clone https://github.com/RafsanProve/qrarg.git
-cd qrarg
+cd qrarg/client
 ```
 
 ### 2. Install Dependencies
