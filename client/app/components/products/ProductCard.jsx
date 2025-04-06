@@ -9,21 +9,6 @@ export default function ProductCard({ title, authors, tags, description, imageUr
       <Image src={imageUrl} alt={title} className="w-full h-64 rounded-t-xl shadow-lg bg-cover" width={320} height={256} />
       <h1 className="line-clamp-2 text-left w-full font-bold text-base sm:text-base md:text-xl mb-4 mt-4 px-4 sm:px-8 md:px-18">{title}</h1>
 
-      {/* Authors section */}
-      {/* <div className="flex flex-row items-center justify-start px-4 sm:px-8 md:px-18 mb-2 group relative">
-        <p className="text-sm text-gray-600 font-bold italic line-clamp-1 cursor-pointer">
-          {authors ? authors.join(', ') : 'Anonymous'}
-          <span className="invisible group-hover:visible absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 bg-gray-900 text-white text-xs rounded whitespace-nowrap z-10">
-            {authors ? authors.join(', ') : 'Anonymous'}
-          </span>
-        </p>
-      </div> */}
-
-      {/* <div className="flex flex-row line-clamp-1 items-center justify-start gap-2 px-4 sm:px-8 md:px-18 mb-2">
-        {tags.map((tag, index) => (
-          <Tag key={index} name={tag} />
-        ))}
-      </div> */}
       {
       (link) 
           ?
@@ -36,7 +21,11 @@ export default function ProductCard({ title, authors, tags, description, imageUr
         //   Visit
         // </Link>
         <div className="flex flex-cols-4 items-start justify-start px-4 sm:px-8 md:px-18 mt-auto">
-        <VisitButton link={link} />
+        {/* <VisitButton link={link} /> */}
+        <Link href={link} target="_blank" className="bg-zinc-800 text-white w-32 h-10 transition duration-700 ease-in-out hover:scale-105 hover:drop-shadow-xl flex items-center justify-center rounded-[4px] mt-auto mx-4 self-start">
+          Visit
+          <Image src="/svgs/arrow.svg" alt="arrow" className="w-4 h-4 ml-2" width={20} height={20} />
+        </Link>
         </div>
       )}
     </div>

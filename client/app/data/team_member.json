@@ -1,0 +1,145 @@
+[
+    {
+      "id": 1,
+      "name": "Jamal Uddin Tanvin",
+      "role": "Research Assistant at MIST",
+      "bio": "Artificial Intelligence, Machine Learning, Deep Learning, Cyber Security, Computer Networking",
+      "image": "/images/jamal.jpg",
+      "education": "B.Sc. in Computer Science and Engineering, MIST",
+      "email": "jamaluddintanvin@outlook.com",
+      "location": "133, West Dolairpar, Shampur, Dhaka-1204",
+      "socialLinks": {
+        "linkedin": "https://www.linkedin.com/in/jamaluddintanvin/",
+        "github": "#",
+        "profile": "https://scholar.google.com/citations?hl=en&user=7M_WwfMAAAAJ"
+      }
+    },
+
+    {
+      "id": 2,
+      "name": "Fahim Shahryer",
+      "role": "Research Assistant at MIST",
+      "bio": "Machine Learning, Data Science, Artificial Intelligence",
+      "image": "/images/fahim.jpg",
+      "education": "B.Sc. in Computer Science and Engineering, MIST",
+      "email": "fahim.shryr@gmail.com",
+      "location": "Main Campus, Building A",
+      "socialLinks": {
+        "linkedin": "https://www.linkedin.com/in/fahim-shahryer-5ba8aa260/",
+        "github": "#",
+        "profile": "https://scholar.google.com/citations?hl=en&user=A4cVT_IAAAAJ"
+      }
+    },
+
+    {
+      "id": 3,
+      "name": "Sachitra Halder",
+      "role": "Research Assistant at MIST",
+      "bio": "Machine Learning, Deep Learning, Computer Vision, IoT, Data Science",
+      "image": "/images/koishik.jpg",
+      "education": "B.Sc. in Computer Science and Engineering, MIST",
+      "email": "#",
+      "location": "133, West Dolairpar, Shampur, Dhaka-1204",
+      "socialLinks": {
+        "linkedin": "https://www.linkedin.com/in/sachitra/",
+        "github": "#",
+        "profile": "https://scholar.google.com/citations?hl=en&user=jQamr4EAAAAJ"
+      }
+    },
+
+    {
+      "id": 4,
+      "name": "Faria Alam",
+      "role": "Lecturer at MIST",
+      "bio": "Natural Language Processing, Artificial Intelligence, Machine Learning, Deep Learning, Cyber Security, Computer Networking",
+      "image": "/images/faria.jpg",
+      "education": "B.Sc. in Computer Science and Engineering, MIST",
+      "email": "fariavns9@gmail.com",
+      "location": "133, West Dolairpar, Shampur, Dhaka-1204",
+      "socialLinks": {
+        "linkedin": "https://www.linkedin.com/in/fariaalam12/",
+        "github": "#",
+        "profile": "https://scholar.google.com/citations?hl=en&user=ah0Bu5UAAAAJ"
+      }
+    },
+
+    {
+      "id": 5,
+      "name": "Ramisha Fariha Baki",
+      "role": "GRA in Montana State University",
+      "bio": "HRC, Machine Learning, Deep Learning, ",
+      "image": "/images/ramisa.jpg",
+      "education": "B.Sc. in Computer Science and Engineering, MIST",
+      "email": "ramishabaki@gmail.com",
+      "location": "133, West Dolairpar, Shampur, Dhaka-1204",
+      "socialLinks": {
+        "linkedin": "https://www.linkedin.com/in/ramisha-baki-399445214/",
+        "github": "https://github.com/Ramisha386",
+        "profile": "https://scholar.google.com/citations?hl=en&user=qb3aUuIAAAAJ"
+      }
+    },
+
+    {
+      "id": 6,
+      "name": "Nurshat Fateh Ali",
+      "role": "AI Developer at SnR, NLP & LLM Researcher",
+      "bio": "Natural Language Processing, Machine Learning, Artificial Intelligence, Deep Learning",
+      "image": "/images/nurshat.jpg",
+      "education": "B.Sc. in Computer Science and Engineering, MIST",
+      "email": "jamaluddintanvin@outlook.com",
+      "location": "133, West Dolairpar, Shampur, Dhaka-1204",
+      "socialLinks": {
+        "linkedin": "https://www.linkedin.com/in/nurshatfatehali/",
+        "github": "https://github.com/nurshatfateh",
+        "profile": "https://scholar.google.com/citations?hl=en&user=ntwHvTQAAAAJ"
+      }
+    },
+
+    {
+      "id": 7,
+      "name": "Rabab Khan Rongon",
+      "role": "Engineering at Agency Handy",
+      "bio": "Human Computer Interaction, Usability Analysis, Software Testing, Sustainable Computing, Cloud Computing, Software Engineering, Fuzzy Inference System.",
+      "image": "/images/rabab.png",
+      "education": "M.Sc. in Computer Science and Engineering, MIST",
+      "email": "rababrongon@gmail.com",
+      "location": "133, West Dolairpar, Shampur, Dhaka-1204",
+      "socialLinks": {
+        "linkedin": "https://www.linkedin.com/in/rabab-khan-rongon/",
+        "github": "#",
+        "profile": "https://www.researchgate.net/profile/Rabab-Khan-Rongon"
+      }
+    },
+
+    {
+      "id": 8,
+      "name": "Farhan Nasif Nizami",
+      "role": "Jr. Software Engineer at ReliSource",
+      "bio": "Artificial Intelligence, Machine Learning, Deep Learning, Cyber Security, Computer Networking",
+      "image": "/images/nizami.jpg",
+      "education": "B.Sc. in Computer Science and Engineering, MIST",
+      "email": "farhannizami0612@gmail.com",
+      "location": "133, West Dolairpar, Shampur, Dhaka-1204",
+      "socialLinks": {
+        "linkedin": "https://www.linkedin.com/in/farhan-nasif-nizami/",
+        "github": "https://github.com/farhannizami",
+        "profile": "https://www.linkedin.com/in/farhan-nasif-nizami/"
+      }
+    },
+
+    {
+      "id": 9,
+      "name": "Shafiq Islam",
+      "role": "Assistant Professor, CSE-MIST, WUB, ADUST, FCUB",
+      "bio": "Robotics, Sentiment Analysis, Haptics, Artificial Intelligence, Machine Learning, Deep Learning",
+      "image": "/images/shafiq_alam.jpg",
+      "education": "PhD in AI Robotics, Deakin University, Australia.",
+      "email": "jamaluddintanvin@outlook.com",
+      "location": "133, West Dolairpar, Shampur, Dhaka-1204",
+      "socialLinks": {
+        "linkedin": "https://www.linkedin.com/in/shafiq-islam-cse/",
+        "github": "#",
+        "profile": "https://scholar.google.com/citations?user=Yza770MAAAAJ&hl=en"
+      }
+    }
+  ]

@@ -10,7 +10,7 @@ import Story from "../components/about-us/Story"
 import CoreValues from "../components/about-us/Core-Values"
 import Timeline from "../components/about-us/Timeline"
 import Leadership from "../components/about-us/Leadership"
-import Partners from "../components/about-us/Partners"
+// import Partners from "../components/about-us/Partners"
 
 import {Roboto_Condensed} from "next/font/google";
 
@@ -26,12 +26,17 @@ return (
     <main className={roboto.className}>
         {/* <div className="flex flex-col min-h-screen w-full"> */}
             <Navbar />
-            <Hero />
+            <div className="bg-zinc-800 w-full h-16"></div>
+            <Hero 
+            title="About Us"
+            description= "Pioneering the future through quantum innovation and collaborative research excellence."
+            tags={1}
+            />
             <Story />
             <CoreValues />
             <Timeline />
             <Leadership />
-            <Partners />
+            {/* <Partners /> */}
             <Footer />
         {/* </div> */}
     </main>

@@ -2,17 +2,50 @@
     {
         "id": 1,
         "name": "Search Algorithm Visualization",
+        "category": "Web Application",
         "description": "This is a web-based application that visualizes the search algorithms. The application is developed using ReactJS",
-        "link": "https://opsimdaz.qrarg.com/",
-        "research_paper": "",
-        "imageUrl": "/images/SearchAlgorithm.png"
+        "image": "/images/SearchAlgorithm.png",
+        "features": [
+            "Provides interactive visualizations for search algorithms like BFS, DFS, Dijkstra, and A*.",
+            "Users can create customizable grids with adjustable parameters such as diagonal movement and weights.",
+            "Displays performance statistics like execution time, memory usage, and visited nodes.",
+            "A built-in user manual explains the algorithms and how to use the tool."
+        ],
+        "applications": ["Programming", "Algorithm Simulation", "Iteration Visualization", "Optimal Path Finding"],
+        "status": "Active",
+        "featured": true,
+        "link": "https://opsimdaz.qrarg.com/"
     },
     {
         "id": 2,
-        "name": "Artificial Kinetic Intelligence system",
+        "name": "Artificial Kinetic Intelligence system (AKI)",
+        "category": "Web Application",
         "description": "Welcome to the Artificial Kinetic Intelligence system, where advanced data analysis and intelligent decision-making meet. Explore insights, power your projects, and achieve remarkable outcomes with our AI-driven tools.",
-        "link": "https://aki.qrarg.com/",
-        "research_paper": "",
-        "imageUrl": "/images/AKI.png"
+        "image": "/images/AKI.png",
+        "features": [
+            "It is built using Streamlit, a Python framework for data applications.",
+            "The site requires JavaScript to be enabled to function properly.",
+            "It appears to host an interactive application, but its exact purpose is unclear.",
+            "Without JavaScript, the application remains inaccessible."
+        ],
+        "applications": ["Artificial Intelligence", "Machine Learning", "Deep Learning", "Data Visualization", "Pattern Recognition"],
+        "status": "Active",
+        "featured": true,
+        "link": "https://aki.qrarg.com/"
+    },
+    {
+        "id": 3,
+        "name": "Rock-Paper-Scissor, an intelligent zero-sum gaming system for Education and Entertainment.",
+        "category": "Robotics",
+        "description": "A custom robotic hand, powered by five servo motors, replicates gestures detected by a computer. The system integrates a TensorFlow Lite (TFLite) model with a Mediapipe-based hand recognition framework and a Random Forest classifier. Designed for real-time use on a Raspberry Pi, the TFLite model analyzes webcam input to detect a thumbs-up gesture, initiating a countdown. Once completed, the user’s gesture is captured and classified, leveraging 3D hand landmarks extracted by Mediapipe and categorized using the Random Forest classifier.",
+        "image": "/images/rock.png",
+        "features": [
+            "Real-time gesture detection and quick response, utilizing a Raspberry Pi for efficient processing",
+            "User-friendly interface for easy interaction with a compact design for integration into existing systems"
+        ],
+        "applications": ["Robotics", "Automation", "Heptic Feedback", "Gesture Recognition", "Gesture Control"],
+        "status": "Available",
+        "featured": true,
+        "link": "https://www.linkedin.com/posts/quantum-robotics-automation-research-group_rock-paper-scissor-ai-integrated-interactive-activity-7267848503966461952-ZZcm?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFB9IxYBrHliDdmp4_XSySRpN4xapbLRURs"
     }
 ]

@@ -24,7 +24,7 @@ const experts = [
 ]
 export default function Leadership() {
 return (
-    <section className="py-16 bg-white text-zinc-800 rounded-3xl p-4 shadow-2xl flex flex-col items-center justify-center h-full max-w-7xl mx-auto text-center pb-10 mt-20 sm:mx-8 md:mx-auto">
+    <section className="py-20 bg-white text-zinc-800 p-4 flex flex-col items-center justify-center h-full w-full mx-auto text-center md:mx-auto">
         <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto flex flex-col items-center mb-12">
             <h2 className="text-zinc-800 text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Our Experts</h2>
@@ -42,7 +42,7 @@ return (
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {experts.map((member, index) => (
-            <Card key={index} className="bg-white shadow-md border-none overflow-hidden">
+            <Card key={index} className="bg-white shadow-lg border-gray-300 overflow-hidden">
                 <div className="aspect-square relative">
                 <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
                 </div>

@@ -4,6 +4,8 @@ import Navbar from "../components/Navbar";
 import {Roboto_Condensed} from "next/font/google";
 import Footer from "../components/Footer";
 import AchievementsSection from "../components/mission-vision/AchievementsSection";
+import Mission from "../components/mission-vision/Mission";
+import Vision from "../components/mission-vision/Vision";
 
 const roboto = Roboto_Condensed({
     weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -18,13 +20,13 @@ const VisionMission = () => {
         <div className="bg-zinc-800 w-full h-16"></div>
         <ImageCollage2 />
         <AchievementsSection />
-
+        <Mission />
+        <Vision />
         
         {/* Vision & Mission Section */}
-        <div className="bg-white p-6 md:p-12 shadow-lg text-zinc-800 rounded-3xl max-w-7xl mx-auto pb-10 mt-20 sm:mx-8 md:mx-auto py-12">
+        {/* <div className="bg-white p-6 md:p-12 text-zinc-800 w-full mx-auto sm:mx-8 md:mx-auto py-20">
           <div className="mb-10">
-              <h1 className="text-4xl md:text-5xl text-zinc-800 font-bold text-center mb-4">Mission & Vision</h1>
-              {/* <div className="w-32 h-1 bg-zinc-800 mx-auto mb-10"></div> */}
+              <h1 className="text-3xl md:text-4xl text-zinc-800 font-bold text-center mb-4">Mission & Vision</h1>
               <div className="flex justify-center">
                   <Image 
                       src="/svgs/Underlines.svg" 
@@ -56,7 +58,9 @@ const VisionMission = () => {
               Join us in shaping the next era of scientific excellence!
               </p>
           </div>
-        </div>
+        </div> */}
+        
+      <div className="bg-white w-full h-20"></div>
       <Footer />
     </main>
   );

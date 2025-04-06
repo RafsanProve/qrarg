@@ -30,7 +30,7 @@ const moto = [
 ]
 export default function CoreValue() {
   return (
-    <section className="py-16 bg-white text-zinc-800 rounded-3xl p-4 shadow-xl flex flex-col items-center justify-center h-full max-w-7xl mx-auto text-center pb-10 mt-20 sm:mx-8 md:mx-auto">
+    <section className="bg-white text-zinc-800 p-4 flex flex-col items-center justify-center h-full w-full mx-auto text-center py-20 md:mx-auto">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto flex flex-col items-center mb-12">
             <h2 className="text-zinc-800 text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Our Core Values</h2>            
@@ -48,10 +48,10 @@ export default function CoreValue() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto pb-8">
             {moto.map((value, index) => (
-              <Card key={index} className="bg-gray-100 shadow-lg border-none transition duration-700 ease-in-out hover:scale-105">
+              <Card key={index} className="bg-gray-100 shadow-lg border-gray-200 transition duration-700 ease-in-out hover:scale-105">
                 <CardContent className="pt-6">
                   <div className="flex flex-col items-center text-center">
-                    <div className="w-16 h-16 rounded-full bg-zinc-800/15 flex items-center justify-center mb-4">
+                    <div className="w-16 h-16 rounded-full bg-zinc-800/20 flex items-center justify-center mb-4">
                       {value.icon}
                     </div>
                     <h3 className="text-zinc-800 text-xl font-bold mb-2">{value.title}</h3>

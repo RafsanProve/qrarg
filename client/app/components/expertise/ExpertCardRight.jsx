@@ -3,12 +3,12 @@ import Link from "next/link"
 
 export default function ExpertCardLeft({ name, position, imageSrc, imageAlt, description, email, facebook, linkedin, whatsapp, researchgate, googleScholar, scopus, orcid, phone}) {
     return (
-    <div className="flex flex-col md:flex-row justify-center items-start bg-white shadow-2xl mx-4 sm:mx-8 md:mx-auto mt-20 p-4 md:p-8 pb-10 rounded-3xl max-w-6xl h-full text-center md:text-right text-zinc-800 transition duration-700 ease-in-out hover:scale-105">
+    <div className="flex flex-col md:flex-row justify-center items-center md:items-start bg-gray-100 border border-gray-300 shadow-xl mx-4 sm:mx-8 md:mx-auto mt-20 p-4 md:p-8 pb-10 rounded-3xl max-w-6xl h-full text-center md:text-right text-zinc-800 transition duration-700 ease-in-out hover:shadow-2xl">
         <div className="flex flex-col justify-end items-center md:items-end md:mr-4 order-2 md:order-1 pl-8">
             <h1 className="mt-4 mb-2 font-bold uppercase tracking-tight text-lg sm:text-xl md:text-3xl">{name}</h1>
             <h6 className="mt-2 mb-2 font-medium text-base sm:text-lg md:text-2xl">{position}</h6>
 
-            <p className="mb-4 text-center md:text-right text-sm sm:text-base md:text-lg leading-relaxed">
+            <p className="mb-4 text-neutral-700 text-center md:text-right sm:text-sm md:text-base lg:text-lg leading-relaxed">
                 {description}
             </p>
             <div className="flex flex-row justify-center md:justify-end items-center gap-3">

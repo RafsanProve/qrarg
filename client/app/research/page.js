@@ -7,6 +7,7 @@ import {Roboto_Condensed} from "next/font/google";
 // import FilterBox from "../components/research/FilterBox";
 // import SearchBar from "../components/research/SearchBar";
 import InfoSection from "../components/research/InfoSection";
+import Hero from "../components/about-us/Hero";
 import data from "../data/research_paper.json";
 import React, { useState } from "react";
 import { Slider, FormGroup, FormControlLabel } from '@mui/material';
@@ -157,8 +158,13 @@ export default function ResearchesPage() {
       <main className={roboto.className}>
         <Navbar />
         <div className="bg-zinc-800 w-full h-16"></div>
-        <InfoSection />
-        <div className="flex flex-col md:flex-row mx-4 md:mx-8">
+        {/* <InfoSection /> */}
+        <Hero
+        title={"Featured Researches"}
+        description={"Explore our featured research articles, showcasing the latest advancements in various fields."}
+        tags={1}
+        />
+        <div className="flex flex-col md:flex-row mx-4 md:mx-8 py-16">
           {/* Filter sidebar */}
           <div className="w-full md:w-1/5 mb-4 md:mb-0 md:sticky md:top-20 md:h-[calc(100vh-5rem)] md:overflow-hidden">
             <div className="h-full overflow-y-auto p-4 md:p-6 bg-white border border-zinc-200 rounded-lg shadow-sm">
@@ -248,7 +254,7 @@ export default function ResearchesPage() {
             </div>
 
             {/* Research cards grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1 mt-4">
               {filteredResults.map((research, index) => (
                 <div 
                   key={`${research.id}-${index}`}
