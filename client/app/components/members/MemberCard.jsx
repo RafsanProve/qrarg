@@ -26,33 +26,38 @@ export default function MemberCard({ member }) {
   
           <div className="space-y-2 text-sm">
             <div className="flex items-start">
-              <BookOpen className="h-4 w-4 text-slate-400 mt-0.5 mr-2" />
+              <BookOpen className="h-4 w-4 text-zinc-800 mt-0.5 mr-2" />
               <span>{member.education}</span>
             </div>
+            
             <div className="flex items-start">
-              <Mail className="h-4 w-4 text-slate-400 mt-0.5 mr-2" />
-              <a href={`mailto:${member.email}`} className="text-primary hover:underline">
-                {member.email}
-              </a>
+                <Mail className="h-4 w-4 text-zinc-800 mt-0.5 mr-2" />
+                <a href={`mailto:${member.email}`} className="text-primary hover:underline">
+                  {member.email}
+                </a>
             </div>
-            <div className="flex items-start">
+            {/* <div className="flex items-start">
               <MapPin className="h-4 w-4 text-slate-400 mt-0.5 mr-2" />
               <span>{member.location}</span>
-            </div>
+            </div> */}
           </div>
   
           <div className="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center">
             <div className="flex space-x-2">
+            {member.socialLinks.linkedin !== "#" && (
               <Link href={member.socialLinks.linkedin} className="text-slate-400 hover:text-primary transition-colors">
-                <Linkedin className="h-4 w-4" />
+                {/* <Linkedin className="h-4 w-4 text-zinc-800" /> */}
+                <Image src="/svgs/linkedin-icon-black.svg" alt="arrow" className="w-6 h-6 ml-2" width={20} height={20} />
                 <span className="sr-only">LinkedIn</span>
-              </Link>
+              </Link>)}
+              {member.socialLinks.github !== "#" && (
               <Link href={member.socialLinks.github} className="text-slate-400 hover:text-primary transition-colors">
-                <Github className="h-4 w-4" />
+                {/* <Github className="h-4 w-4 text-zinc-800" /> */}
+                <Image src="/svgs/github-icon.svg" alt="arrow" className="w-6 h-6 ml-2" width={20} height={20} />
                 <span className="sr-only">GitHub</span>
-              </Link>
+              </Link>)}
             </div>
-            <Link href={`/members/${member.id}`} className="text-primary text-sm font-medium flex items-center">
+            <Link href={`/members/${member.socialLinks.profile}`} className="text-primary text-sm font-medium flex items-center">
               View Profile <ExternalLink className="ml-1 h-3 w-3" />
             </Link>
           </div>
